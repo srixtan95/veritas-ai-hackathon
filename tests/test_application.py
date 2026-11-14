@@ -15,6 +15,7 @@ from src.application import (
     load_research_results,
     model_input_schema,
     validate_applicant_input,
+    validate_research_result_keys,
 )
 from src.affordability import assess_affordability
 
@@ -76,6 +77,17 @@ class ApplicationServiceTests(unittest.TestCase):
         self.assertEqual(set(results), set(FAIRNESS_FILES))
         self.assertEqual(set(results["age_fairness"]["model"]), {"Model A (all features)", "Model B (without age)"})
         self.assertEqual(len(results["repeated_fairness"]["model"].unique()), 8)
+        proxy_rates = results["proxy_fairness"]
+        self.assertEqual(len(proxy_rates), 14)
+        self.assertIn("Without Housing (Attribute15)", set(proxy_rates["experiment"]))
+        proxy_gaps = results["proxy_fairness_gaps"]
+        self.assertIn("absolute_gap_percentage_points", proxy_gaps.columns)
+        self.assertIn("Without Checking account status (Attribute1)", set(proxy_gaps["experiment"]))
+        self.assertEqual(len(proxy_gaps), 21)
+
+    def test_incomplete_research_mapping_reports_missing_table_names(self):
+        with self.assertRaisesRegex(ValueError, "proxy_fairness_gaps"):
+            validate_research_result_keys({"proxy_fairness": pd.DataFrame()})
 
     def test_loading_and_assessing_never_calls_pipeline_fit_or_changes_research_artifacts(self):
         before = artifact_hashes()

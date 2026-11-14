@@ -13,7 +13,10 @@ from .explainability import DEFAULT_AGE_COLUMN, NEAR_THRESHOLD_BAND, explain_app
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MODEL_B_PATH = PROJECT_ROOT / "outputs" / "age_ablation" / "model_b_without_age.joblib"
 AGE_FAIRNESS_PATH = PROJECT_ROOT / "outputs" / "age_ablation" / "fairness_metrics.csv"
+AGE_FAIRNESS_GAPS_PATH = PROJECT_ROOT / "outputs" / "age_ablation" / "fairness_gaps.csv"
+AGE_PERFORMANCE_PATH = PROJECT_ROOT / "outputs" / "age_ablation" / "model_comparison.csv"
 PROXY_FAIRNESS_PATH = PROJECT_ROOT / "outputs" / "proxy_ablation" / "fairness_metrics.csv"
+PROXY_FAIRNESS_GAPS_PATH = PROJECT_ROOT / "outputs" / "proxy_ablation" / "fairness_gaps.csv"
 PROXY_PERFORMANCE_PATH = PROJECT_ROOT / "outputs" / "proxy_ablation" / "model_comparison.csv"
 PROXY_CHANGES_PATH = PROJECT_ROOT / "outputs" / "proxy_ablation" / "performance_changes.csv"
 REPEAT_FAIRNESS_PATH = PROJECT_ROOT / "outputs" / "repeated_validation" / "fairness_summary.csv"
@@ -65,7 +68,10 @@ NUMERIC_DEFAULTS = {
 
 FAIRNESS_FILES = {
     "age_fairness": AGE_FAIRNESS_PATH,
+    "age_fairness_gaps": AGE_FAIRNESS_GAPS_PATH,
+    "age_performance": AGE_PERFORMANCE_PATH,
     "proxy_fairness": PROXY_FAIRNESS_PATH,
+    "proxy_fairness_gaps": PROXY_FAIRNESS_GAPS_PATH,
     "proxy_performance": PROXY_PERFORMANCE_PATH,
     "proxy_performance_changes": PROXY_CHANGES_PATH,
     "repeated_fairness": REPEAT_FAIRNESS_PATH,
@@ -185,7 +191,10 @@ def load_research_results(paths=None):
             raise ValueError(f"Saved research output {path} is empty.")
     required = {
         "age_fairness": {"model", "group", "approval_rate", "false_approval_rate", "false_rejection_rate"},
+        "age_fairness_gaps": {"model", "metric", "absolute_gap_percentage_points"},
+        "age_performance": {"model", "accuracy", "balanced_accuracy", "roc_auc"},
         "proxy_fairness": {"experiment", "group", "approval_rate", "false_approval_rate", "false_rejection_rate"},
+        "proxy_fairness_gaps": {"experiment", "metric", "absolute_gap_percentage_points"},
         "proxy_performance": {"experiment", "accuracy", "balanced_accuracy", "roc_auc", "error_cost"},
         "repeated_fairness": {"model", "group", "metric", "mean", "empirical_2_5_percentile", "empirical_97_5_percentile"},
         "repeated_fairness_gaps": {"model", "metric", "mean", "empirical_2_5_percentile", "empirical_97_5_percentile"},
@@ -196,3 +205,11 @@ def load_research_results(paths=None):
         if absent:
             raise ValueError(f"Saved research output {paths[name]} is missing columns: {sorted(absent)}")
     return frames
+
+
+def validate_research_result_keys(research):
+    """Reject incomplete result mappings with a readable missing-table error."""
+    missing = sorted(set(FAIRNESS_FILES) - set(research))
+    if missing:
+        raise ValueError("Research results are incomplete; missing table(s): " + ", ".join(missing))
+    return research

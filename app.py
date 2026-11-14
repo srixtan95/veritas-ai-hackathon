@@ -17,6 +17,7 @@ from src.application import (
     load_credit_model,
     load_research_results,
     model_input_schema,
+    validate_research_result_keys,
 )
 
 
@@ -378,7 +379,7 @@ def _render_fairness_research():
     st.write("This page presents the project's saved evaluation results. It does not retrain models or rerun experiments.")
     st.warning("Removing a feature does not prove fairness. These results describe one historical dataset and several model evaluations; no single metric is sufficient evidence of fairness.")
     try:
-        research = cached_research_results()
+        research = validate_research_result_keys(cached_research_results())
         stage1 = json.loads((PROJECT_ROOT / "models" / "stage1_metrics.json").read_text(encoding="utf-8"))
     except (FileNotFoundError, ValueError, OSError) as error:
         st.error(f"Saved research results could not be loaded: {error}")
@@ -396,7 +397,7 @@ def _render_fairness_research():
 
     st.markdown("### 2 · Age-included versus age-excluded model")
     age = research["age_fairness"]
-    performance = pd.read_csv(PROJECT_ROOT / "outputs" / "age_ablation" / "model_comparison.csv")
+    performance = research["age_performance"]
     _render_bar_chart(performance.set_index("model")[["accuracy", "balanced_accuracy", "roc_auc"]] * 100, "Model A and Model B held-out performance", percent=True, axis_label="Score (%)")
     st.caption("Model A includes age; Model B excludes Attribute13. Accuracy changes from 78.0% to 77.5% on this split. Age is still retained separately for aggregate fairness auditing.")
 
@@ -405,8 +406,7 @@ def _render_fairness_research():
     st.caption("This is a descriptive predicted-Good rate comparison for Under 25 and 25 or older on one held-out split.")
 
     st.markdown("### 4 · False approval and false rejection gaps")
-    gaps_path = PROJECT_ROOT / "outputs" / "age_ablation" / "fairness_gaps.csv"
-    gaps = pd.read_csv(gaps_path)
+    gaps = research["age_fairness_gaps"]
     gap_wide = gaps.pivot(index="model", columns="metric", values="absolute_gap_percentage_points")
     _render_bar_chart(gap_wide, "Absolute held-out age-group error and approval gaps", axis_label="Percentage-point gap")
     st.caption("False approval means an actual Bad-risk case predicted Good; false rejection means actual Good predicted Bad. The rates use different class-specific denominators.")
@@ -419,6 +419,19 @@ def _render_fairness_research():
         proxy_values *= 100
     _render_bar_chart(proxy_values, f"Saved proxy ablation comparison: {metric.replace('_', ' ')}", percent=metric != "error_cost", axis_label="Error cost" if metric == "error_cost" else "Score (%)")
     _render_table(research["proxy_performance_changes"], "Performance change after removing candidate features")
+    proxy_rates = research["proxy_fairness"].copy()
+    for column in ("approval_rate", "false_approval_rate", "false_rejection_rate"):
+        proxy_rates[column] *= 100
+    _render_table(
+        proxy_rates.rename(columns={
+            "experiment": "Experiment", "group": "Age group",
+            "approval_rate": "Approval rate (%)",
+            "false_approval_rate": "False approval rate (%)",
+            "false_rejection_rate": "False rejection rate (%)",
+        }),
+        "Age-group rates for each proxy ablation",
+        percent_columns=("Approval rate (%)", "False approval rate (%)", "False rejection rate (%)"),
+    )
     st.caption("Removing checking account status changed accuracy by −5.5 percentage points in its experiment; removing savings, employment, and housing together changed it by +3.0 points. The outcomes vary by feature and metric; neither result proves causation or eliminates proxy effects.")
 
     st.markdown("### 6 · Repeated validation across eight configurations")
@@ -442,7 +455,8 @@ def _render_fairness_research():
     changes = research["proxy_performance_changes"].copy()
     st.write("Across these saved experiments, changes to predictive performance and group error gaps do not move together in one consistent direction. Review the individual rows and denominators; a better value on one metric is not a complete fairness judgment.")
     _render_table(changes, "Predictive metric changes for feature-removal experiments")
-    _render_table(research["proxy_fairness_gaps"], "Age-group rate gaps for feature-removal experiments")
+    proxy_gaps = research["proxy_fairness_gaps"]
+    _render_table(proxy_gaps, "Age-group rate gaps for feature-removal experiments")
     st.caption("Small subgroup counts make rates unstable, and the historical German Credit labels are limited proxies for real repayment outcomes.")
 
 
