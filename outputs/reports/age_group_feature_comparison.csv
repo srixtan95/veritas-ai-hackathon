@@ -1,0 +1,12 @@
+feature,description,type,age_association_spearman,under25_mean,under25_median,25plus_mean,25plus_median,mannwhitney_p_descriptive,age_association_cramers_v,category_frequencies
+Attribute2,Duration,numeric,-0.03631637736138954,20.48993288590604,18.0,20.975323149236193,18.0,0.3897659217506775,,
+Attribute5,Credit amount,numeric,0.026298440516129843,2958.758389261745,2030.0,3325.972972972973,2359.0,0.02433338710179957,,
+Attribute11,Present residence since,numeric,0.23470863707548933,2.9060402684563758,3.0,2.8343125734430084,3.0,0.3685250907248827,,
+Attribute1,Status of existing checking account,categorical,,,,,,,0.13183072299431958,"{""Under 25"": {""A11"": 57, ""A12"": 46, ""A14"": 38, ""A13"": 8}, ""25 or older"": {""A14"": 356, ""A12"": 223, ""A11"": 217, ""A13"": 55}}"
+Attribute3,Credit history,categorical,,,,,,,0.17963114764863894,"{""Under 25"": {""A32"": 110, ""A34"": 23, ""A33"": 7, ""A31"": 7, ""A30"": 2}, ""25 or older"": {""A32"": 420, ""A34"": 270, ""A33"": 81, ""A31"": 42, ""A30"": 38}}"
+Attribute4,Purpose,categorical,,,,,,,0.15778533362803177,"{""Under 25"": {""A43"": 45, ""A42"": 42, ""A40"": 25, ""A41"": 14, ""A49"": 7, ""A46"": 6, ""A45"": 5, ""A44"": 4, ""A48"": 1}, ""25 or older"": {""A43"": 235, ""A40"": 209, ""A42"": 139, ""A49"": 90, ""A41"": 89, ""A46"": 44, ""A45"": 17, ""A410"": 12, ""A44"": 8, ""A48"": 8}}"
+Attribute6,Savings account/bonds,categorical,,,,,,,0.06767142244003971,"{""Under 25"": {""A61"": 95, ""A62"": 19, ""A65"": 19, ""A63"": 10, ""A64"": 6}, ""25 or older"": {""A61"": 508, ""A65"": 164, ""A62"": 84, ""A63"": 53, ""A64"": 42}}"
+Attribute7,Present employment since,categorical,,,,,,,0.21200002659543102,"{""Under 25"": {""A73"": 59, ""A72"": 45, ""A74"": 28, ""A75"": 9, ""A71"": 8}, ""25 or older"": {""A73"": 280, ""A75"": 244, ""A74"": 146, ""A72"": 127, ""A71"": 54}}"
+Attribute12,Property,categorical,,,,,,,0.0933406076951041,"{""Under 25"": {""A123"": 54, ""A121"": 45, ""A122"": 39, ""A124"": 11}, ""25 or older"": {""A123"": 278, ""A121"": 237, ""A122"": 193, ""A124"": 143}}"
+Attribute15,Housing,categorical,,,,,,,0.3141955092232718,"{""Under 25"": {""A152"": 75, ""A151"": 69, ""A153"": 5}, ""25 or older"": {""A152"": 638, ""A151"": 110, ""A153"": 103}}"
+Attribute17,Job,categorical,,,,,,,0.14302078461300666,"{""Under 25"": {""A173"": 108, ""A172"": 33, ""A171"": 4, ""A174"": 4}, ""25 or older"": {""A173"": 522, ""A172"": 167, ""A174"": 144, ""A171"": 18}}"

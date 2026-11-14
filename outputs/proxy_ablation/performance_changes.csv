@@ -1,0 +1,7 @@
+experiment,accuracy_change_percentage_points,balanced_accuracy_change_percentage_points,roc_auc_change,cost_change
+Without Checking account status (Attribute1),-5.500000000000005,-6.785714285714284,-0.06369047619047641,35
+Without Loan purpose (Attribute4),-2.500000000000002,-3.214285714285703,-0.023809523809523947,17
+Without Savings (Attribute6),2.500000000000002,1.7857142857142905,0.007023809523809432,-5
+Without Employment duration (Attribute7),0.5000000000000004,0.8333333333333415,0.0023809523809523725,-5
+Without Housing (Attribute15),1.0000000000000009,0.7142857142857229,0.009047619047618971,-2
+Without Savings + employment duration + housing,3.0000000000000027,2.1428571428571463,0.02035714285714263,-6

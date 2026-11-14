@@ -2,8 +2,10 @@
 __pycache__/
 *.py[cod]
 .venv/
+.venv*/
 venv/
 .env
+.streamlit/secrets.toml
 
 # VS Code
 .vscode/
