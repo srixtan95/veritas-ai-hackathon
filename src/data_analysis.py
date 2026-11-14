@@ -506,7 +506,7 @@ def run_data_analysis(dataset, baseline):
     logistic = scores["logistic_regression"]
     dummy = scores["dummy_all_good"]
     (PROJECT_ROOT / "docs" / "stage1_report.md").write_text(
-        "# Veritas AI - Dataset Exploration and Baseline\n\n"
+        "# Immortals AI - Dataset Exploration and Baseline\n\n"
         f"Dataset: {dataset['metadata']['name']} (UCI ID 144), {row_count} applicants and {features.shape[1]} input features.\n\n"
         f"Target values: 1 = good credit risk and 2 = bad credit risk. Missing values: {profile['total_missing']}; "
         f"duplicate complete rows: {profile['duplicate_rows']}. See `../outputs/reports/dataset_profile.json` and `../outputs/reports/feature_dictionary.csv` for details.\n\n"

@@ -1,0 +1,5 @@
+model,group,group_size,approval_count,approval_denominator,approval_rate,false_approval_count,false_approval_denominator,false_approval_rate,false_rejection_count,false_rejection_denominator,false_rejection_rate,true_positive_count,true_positive_denominator,true_positive_rate,good_count,bad_count
+Model A (all features),Under 25,39,24,39,0.6153846153846154,8,19,0.42105263157894735,4,20,0.2,16,20,0.8,20,19
+Model A (all features),25 or older,161,128,161,0.7950310559006211,20,41,0.4878048780487805,12,120,0.1,108,120,0.9,120,41
+Model B (without age),Under 25,39,24,39,0.6153846153846154,8,19,0.42105263157894735,4,20,0.2,16,20,0.8,20,19
+Model B (without age),25 or older,161,127,161,0.7888198757763976,20,41,0.4878048780487805,13,120,0.10833333333333334,107,120,0.8916666666666667,120,41

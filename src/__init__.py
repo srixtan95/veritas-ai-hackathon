@@ -1,2 +1,2 @@
-"""Veritas loan risk and fairness audit package."""
+"""Immortals AI loan-risk and fairness research package."""
 

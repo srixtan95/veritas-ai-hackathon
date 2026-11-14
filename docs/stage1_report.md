@@ -1,4 +1,4 @@
-# Veritas AI - Dataset Exploration and Baseline
+# Immortals AI - Dataset Exploration and Baseline
 
 Dataset: Statlog (German Credit Data) (UCI ID 144), 1000 applicants and 20 input features.
 
