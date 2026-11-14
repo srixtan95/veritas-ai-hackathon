@@ -1,0 +1,45 @@
+{
+  "age_feature_excluded": "Attribute13",
+  "target_feature_excluded": "class",
+  "age_group_counts": {
+    "25 or older": 851,
+    "Under 25": 149
+  },
+  "test_n": 200,
+  "model_test": {
+    "balanced_accuracy": 0.638235294117647,
+    "precision": 0.6923076923076923,
+    "recall": 0.3,
+    "f1": 0.4186046511627907,
+    "roc_auc": 0.7782352941176471
+  },
+  "majority_baseline_test": {
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "cross_validation_train_folds": {
+    "balanced_accuracy": {
+      "mean": 0.5730714961325691,
+      "std": 0.025966912100410074
+    },
+    "precision": {
+      "mean": 0.424963924963925,
+      "std": 0.11506975220744375
+    },
+    "recall": {
+      "mean": 0.19311594202898552,
+      "std": 0.04665690441594512
+    },
+    "f1": {
+      "mean": 0.2638869902027797,
+      "std": 0.06275247750601332
+    },
+    "roc_auc": {
+      "mean": 0.8004087365666672,
+      "std": 0.04963749465135788
+    }
+  },
+  "interpretation": "Predictability suggests the other features contain information about age group. It does not prove causation or discrimination."
+}

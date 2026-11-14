@@ -1,0 +1,3 @@
+age_group,applicants,share_percent,good,bad,good_percent_within_group,good_wilson95_low_percent,good_wilson95_high_percent,bad_percent_within_group
+Under 25,149,14.9,88,61,59.060402684563755,51.033645608205056,66.63170204583679,40.939597315436245
+25 or older,851,85.1,612,239,71.9153936545241,68.80258095564812,74.83123377681225,28.084606345475912

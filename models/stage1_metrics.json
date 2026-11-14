@@ -1,0 +1,85 @@
+{
+  "dataset": {
+    "uci_id": 144,
+    "name": "Statlog (German Credit Data)",
+    "target_description": "1 = Good, 2 = Bad",
+    "target_labels": [
+      "1",
+      "2"
+    ]
+  },
+  "target": {
+    "name": "class",
+    "good_label": 1,
+    "bad_label": 2
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_rows": 800,
+    "test_rows": 200
+  },
+  "metrics": {
+    "dummy_all_good": {
+      "accuracy": 0.7,
+      "confusion_matrix": [
+        [
+          140,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": [
+          "actual_good",
+          "actual_bad"
+        ],
+        "columns": [
+          "predicted_good",
+          "predicted_bad"
+        ]
+      },
+      "precision_good": 0.7,
+      "recall_good": 1.0,
+      "f1_good": 0.8235294117647058,
+      "balanced_accuracy": 0.5,
+      "false_approvals": 60,
+      "false_rejections": 0,
+      "error_cost": 300
+    },
+    "logistic_regression": {
+      "accuracy": 0.78,
+      "confusion_matrix": [
+        [
+          124,
+          16
+        ],
+        [
+          28,
+          32
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": [
+          "actual_good",
+          "actual_bad"
+        ],
+        "columns": [
+          "predicted_good",
+          "predicted_bad"
+        ]
+      },
+      "precision_good": 0.8157894736842105,
+      "recall_good": 0.8857142857142857,
+      "f1_good": 0.8493150684931506,
+      "balanced_accuracy": 0.7095238095238094,
+      "false_approvals": 28,
+      "false_rejections": 16,
+      "error_cost": 156,
+      "roc_auc": 0.8040476190476191
+    }
+  }
+}
