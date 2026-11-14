@@ -1,6 +1,7 @@
 """Reusable application services for the Immortals AI Streamlit prototype."""
 
 import math
+from collections.abc import Mapping
 from pathlib import Path
 
 import numpy as np
@@ -209,6 +210,8 @@ def load_research_results(paths=None):
 
 def validate_research_result_keys(research):
     """Reject incomplete result mappings with a readable missing-table error."""
+    if not isinstance(research, Mapping):
+        raise ValueError("Research results are unavailable; expected a mapping of saved result tables.")
     missing = sorted(set(FAIRNESS_FILES) - set(research))
     if missing:
         raise ValueError("Research results are incomplete; missing table(s): " + ", ".join(missing))

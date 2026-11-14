@@ -74,6 +74,7 @@ class ApplicationServiceTests(unittest.TestCase):
 
     def test_research_dashboard_loads_saved_results_without_rerunning(self):
         results = load_research_results()
+        self.assertIs(validate_research_result_keys(results), results)
         self.assertEqual(set(results), set(FAIRNESS_FILES))
         self.assertEqual(set(results["age_fairness"]["model"]), {"Model A (all features)", "Model B (without age)"})
         self.assertEqual(len(results["repeated_fairness"]["model"].unique()), 8)
@@ -88,6 +89,8 @@ class ApplicationServiceTests(unittest.TestCase):
     def test_incomplete_research_mapping_reports_missing_table_names(self):
         with self.assertRaisesRegex(ValueError, "proxy_fairness_gaps"):
             validate_research_result_keys({"proxy_fairness": pd.DataFrame()})
+        with self.assertRaisesRegex(ValueError, "expected a mapping"):
+            validate_research_result_keys(None)
 
     def test_loading_and_assessing_never_calls_pipeline_fit_or_changes_research_artifacts(self):
         before = artifact_hashes()
