@@ -1,0 +1,5 @@
+Model,Age group,Group size,Approval rate,False approval rate,False rejection rate,True positive rate
+Model A (all features),Under 25,39,61.5% (24/39),42.1% (8/19),20.0% (4/20),80.0% (16/20)
+Model A (all features),25 or older,161,79.5% (128/161),48.8% (20/41),10.0% (12/120),90.0% (108/120)
+Model B (without age),Under 25,39,61.5% (24/39),42.1% (8/19),20.0% (4/20),80.0% (16/20)
+Model B (without age),25 or older,161,78.9% (127/161),48.8% (20/41),10.8% (13/120),89.2% (107/120)

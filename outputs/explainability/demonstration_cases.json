@@ -1,0 +1,497 @@
+[
+  {
+    "predicted_class": 1,
+    "predicted_class_name": "Good risk",
+    "probabilities": {
+      "Good risk": 0.9975541417250514,
+      "Bad risk": 0.0024458582749485604
+    },
+    "good_log_odds": 6.010910330681582,
+    "intercept_good_log_odds": 1.4199666449808317,
+    "contributions": [
+      {
+        "feature": "Attribute2",
+        "transformed_feature": "Attribute2",
+        "good_log_odds_contribution": 0.2472446233024776
+      },
+      {
+        "feature": "Attribute5",
+        "transformed_feature": "Attribute5",
+        "good_log_odds_contribution": 0.21530577453182834
+      },
+      {
+        "feature": "Attribute8",
+        "transformed_feature": "Attribute8",
+        "good_log_odds_contribution": -0.019852659279353542
+      },
+      {
+        "feature": "Attribute11",
+        "transformed_feature": "Attribute11",
+        "good_log_odds_contribution": 0.006257776888578398
+      },
+      {
+        "feature": "Attribute16",
+        "transformed_feature": "Attribute16",
+        "good_log_odds_contribution": 0.062253469081836
+      },
+      {
+        "feature": "Attribute18",
+        "transformed_feature": "Attribute18",
+        "good_log_odds_contribution": 0.05207128457401504
+      },
+      {
+        "feature": "Attribute1",
+        "transformed_feature": "Attribute1 = A14",
+        "good_log_odds_contribution": 0.8839062803229141
+      },
+      {
+        "feature": "Attribute3",
+        "transformed_feature": "Attribute3 = A32",
+        "good_log_odds_contribution": -0.02126699471438803
+      },
+      {
+        "feature": "Attribute4",
+        "transformed_feature": "Attribute4 = A41",
+        "good_log_odds_contribution": 0.7093206281934892
+      },
+      {
+        "feature": "Attribute6",
+        "transformed_feature": "Attribute6 = A64",
+        "good_log_odds_contribution": 0.6345107935143645
+      },
+      {
+        "feature": "Attribute7",
+        "transformed_feature": "Attribute7 = A74",
+        "good_log_odds_contribution": 0.5290469166543422
+      },
+      {
+        "feature": "Attribute9",
+        "transformed_feature": "Attribute9 = A93",
+        "good_log_odds_contribution": 0.49993680695356896
+      },
+      {
+        "feature": "Attribute10",
+        "transformed_feature": "Attribute10 = A101",
+        "good_log_odds_contribution": -0.06851376096245833
+      },
+      {
+        "feature": "Attribute12",
+        "transformed_feature": "Attribute12 = A122",
+        "good_log_odds_contribution": 0.21148593570530302
+      },
+      {
+        "feature": "Attribute14",
+        "transformed_feature": "Attribute14 = A143",
+        "good_log_odds_contribution": 0.40554118889218566
+      },
+      {
+        "feature": "Attribute15",
+        "transformed_feature": "Attribute15 = A152",
+        "good_log_odds_contribution": -0.04116900428046117
+      },
+      {
+        "feature": "Attribute17",
+        "transformed_feature": "Attribute17 = A173",
+        "good_log_odds_contribution": -0.13125936204035282
+      },
+      {
+        "feature": "Attribute19",
+        "transformed_feature": "Attribute19 = A191",
+        "good_log_odds_contribution": -0.16371575504985525
+      },
+      {
+        "feature": "Attribute20",
+        "transformed_feature": "Attribute20 = A202",
+        "good_log_odds_contribution": 0.5798397434127158
+      }
+    ],
+    "strongest_towards_good": [
+      {
+        "feature": "Attribute1",
+        "transformed_feature": "Attribute1 = A14",
+        "good_log_odds_contribution": 0.8839062803229141
+      },
+      {
+        "feature": "Attribute4",
+        "transformed_feature": "Attribute4 = A41",
+        "good_log_odds_contribution": 0.7093206281934892
+      },
+      {
+        "feature": "Attribute6",
+        "transformed_feature": "Attribute6 = A64",
+        "good_log_odds_contribution": 0.6345107935143645
+      }
+    ],
+    "strongest_towards_bad": [
+      {
+        "feature": "Attribute19",
+        "transformed_feature": "Attribute19 = A191",
+        "good_log_odds_contribution": -0.16371575504985525
+      },
+      {
+        "feature": "Attribute17",
+        "transformed_feature": "Attribute17 = A173",
+        "good_log_odds_contribution": -0.13125936204035282
+      },
+      {
+        "feature": "Attribute10",
+        "transformed_feature": "Attribute10 = A101",
+        "good_log_odds_contribution": -0.06851376096245833
+      }
+    ],
+    "near_threshold": false,
+    "explanation": "The model predicts Good risk (Good-risk probability 99.8%). The listed factors add to a Good-versus-Bad log-odds score of 6.011. The probability is a model estimate, not a guarantee.",
+    "applicant": {
+      "Attribute1": "A14",
+      "Attribute2": 12,
+      "Attribute3": "A32",
+      "Attribute4": "A41",
+      "Attribute5": 1413,
+      "Attribute6": "A64",
+      "Attribute7": "A74",
+      "Attribute8": 3,
+      "Attribute9": "A93",
+      "Attribute10": "A101",
+      "Attribute11": 2,
+      "Attribute12": "A122",
+      "Attribute14": "A143",
+      "Attribute15": "A152",
+      "Attribute16": 1,
+      "Attribute17": "A173",
+      "Attribute18": 1,
+      "Attribute19": "A191",
+      "Attribute20": "A202"
+    },
+    "demonstration_type": "Good risk"
+  },
+  {
+    "predicted_class": 2,
+    "predicted_class_name": "Bad risk",
+    "probabilities": {
+      "Good risk": 0.025528311560422345,
+      "Bad risk": 0.9744716884395777
+    },
+    "good_log_odds": -3.642107372573,
+    "intercept_good_log_odds": 1.4199666449808317,
+    "contributions": [
+      {
+        "feature": "Attribute2",
+        "transformed_feature": "Attribute2",
+        "good_log_odds_contribution": -0.9368231279750663
+      },
+      {
+        "feature": "Attribute5",
+        "transformed_feature": "Attribute5",
+        "good_log_odds_contribution": -1.5458328753948385
+      },
+      {
+        "feature": "Attribute8",
+        "transformed_feature": "Attribute8",
+        "good_log_odds_contribution": -0.019852659279353542
+      },
+      {
+        "feature": "Attribute11",
+        "transformed_feature": "Attribute11",
+        "good_log_odds_contribution": -0.008821203565827378
+      },
+      {
+        "feature": "Attribute16",
+        "transformed_feature": "Attribute16",
+        "good_log_odds_contribution": 0.062253469081836
+      },
+      {
+        "feature": "Attribute18",
+        "transformed_feature": "Attribute18",
+        "good_log_odds_contribution": 0.05207128457401504
+      },
+      {
+        "feature": "Attribute1",
+        "transformed_feature": "Attribute1 = A12",
+        "good_log_odds_contribution": -0.27745660131266675
+      },
+      {
+        "feature": "Attribute3",
+        "transformed_feature": "Attribute3 = A30",
+        "good_log_odds_contribution": -0.5417323138048626
+      },
+      {
+        "feature": "Attribute4",
+        "transformed_feature": "Attribute4 = A49",
+        "good_log_odds_contribution": 0.08860098099428568
+      },
+      {
+        "feature": "Attribute6",
+        "transformed_feature": "Attribute6 = A61",
+        "good_log_odds_contribution": -0.6442162754155303
+      },
+      {
+        "feature": "Attribute7",
+        "transformed_feature": "Attribute7 = A72",
+        "good_log_odds_contribution": -0.2892114276647099
+      },
+      {
+        "feature": "Attribute9",
+        "transformed_feature": "Attribute9 = A93",
+        "good_log_odds_contribution": 0.49993680695356896
+      },
+      {
+        "feature": "Attribute10",
+        "transformed_feature": "Attribute10 = A101",
+        "good_log_odds_contribution": -0.06851376096245833
+      },
+      {
+        "feature": "Attribute12",
+        "transformed_feature": "Attribute12 = A124",
+        "good_log_odds_contribution": -0.7158558731894727
+      },
+      {
+        "feature": "Attribute14",
+        "transformed_feature": "Attribute14 = A143",
+        "good_log_odds_contribution": 0.40554118889218566
+      },
+      {
+        "feature": "Attribute15",
+        "transformed_feature": "Attribute15 = A151",
+        "good_log_odds_contribution": -0.5836467112620352
+      },
+      {
+        "feature": "Attribute17",
+        "transformed_feature": "Attribute17 = A173",
+        "good_log_odds_contribution": -0.13125936204035282
+      },
+      {
+        "feature": "Attribute19",
+        "transformed_feature": "Attribute19 = A192",
+        "good_log_odds_contribution": 0.16814997114001132
+      },
+      {
+        "feature": "Attribute20",
+        "transformed_feature": "Attribute20 = A201",
+        "good_log_odds_contribution": -0.575405527322561
+      }
+    ],
+    "strongest_towards_good": [
+      {
+        "feature": "Attribute9",
+        "transformed_feature": "Attribute9 = A93",
+        "good_log_odds_contribution": 0.49993680695356896
+      },
+      {
+        "feature": "Attribute14",
+        "transformed_feature": "Attribute14 = A143",
+        "good_log_odds_contribution": 0.40554118889218566
+      },
+      {
+        "feature": "Attribute19",
+        "transformed_feature": "Attribute19 = A192",
+        "good_log_odds_contribution": 0.16814997114001132
+      }
+    ],
+    "strongest_towards_bad": [
+      {
+        "feature": "Attribute5",
+        "transformed_feature": "Attribute5",
+        "good_log_odds_contribution": -1.5458328753948385
+      },
+      {
+        "feature": "Attribute2",
+        "transformed_feature": "Attribute2",
+        "good_log_odds_contribution": -0.9368231279750663
+      },
+      {
+        "feature": "Attribute12",
+        "transformed_feature": "Attribute12 = A124",
+        "good_log_odds_contribution": -0.7158558731894727
+      }
+    ],
+    "near_threshold": false,
+    "explanation": "The model predicts Bad risk (Good-risk probability 2.6%). The listed factors add to a Good-versus-Bad log-odds score of -3.642. The probability is a model estimate, not a guarantee.",
+    "applicant": {
+      "Attribute1": "A12",
+      "Attribute2": 54,
+      "Attribute3": "A30",
+      "Attribute4": "A49",
+      "Attribute5": 15945,
+      "Attribute6": "A61",
+      "Attribute7": "A72",
+      "Attribute8": 3,
+      "Attribute9": "A93",
+      "Attribute10": "A101",
+      "Attribute11": 4,
+      "Attribute12": "A124",
+      "Attribute14": "A143",
+      "Attribute15": "A151",
+      "Attribute16": 1,
+      "Attribute17": "A173",
+      "Attribute18": 1,
+      "Attribute19": "A192",
+      "Attribute20": "A201"
+    },
+    "demonstration_type": "Bad risk"
+  },
+  {
+    "predicted_class": 2,
+    "predicted_class_name": "Bad risk",
+    "probabilities": {
+      "Good risk": 0.49911942457064684,
+      "Bad risk": 0.5008805754293532
+    },
+    "good_log_odds": -0.003522305359071165,
+    "intercept_good_log_odds": 1.4199666449808317,
+    "contributions": [
+      {
+        "feature": "Attribute2",
+        "transformed_feature": "Attribute2",
+        "good_log_odds_contribution": -0.26021298438789836
+      },
+      {
+        "feature": "Attribute5",
+        "transformed_feature": "Attribute5",
+        "good_log_odds_contribution": -0.052403782149152055
+      },
+      {
+        "feature": "Attribute8",
+        "transformed_feature": "Attribute8",
+        "good_log_odds_contribution": -0.3577702640343083
+      },
+      {
+        "feature": "Attribute11",
+        "transformed_feature": "Attribute11",
+        "good_log_odds_contribution": -0.008821203565827378
+      },
+      {
+        "feature": "Attribute16",
+        "transformed_feature": "Attribute16",
+        "good_log_odds_contribution": -0.09051578019874316
+      },
+      {
+        "feature": "Attribute18",
+        "transformed_feature": "Attribute18",
+        "good_log_odds_contribution": 0.05207128457401504
+      },
+      {
+        "feature": "Attribute1",
+        "transformed_feature": "Attribute1 = A11",
+        "good_log_odds_contribution": -0.658934727509013
+      },
+      {
+        "feature": "Attribute3",
+        "transformed_feature": "Attribute3 = A32",
+        "good_log_odds_contribution": -0.02126699471438803
+      },
+      {
+        "feature": "Attribute4",
+        "transformed_feature": "Attribute4 = A42",
+        "good_log_odds_contribution": -0.06020272381147112
+      },
+      {
+        "feature": "Attribute6",
+        "transformed_feature": "Attribute6 = A64",
+        "good_log_odds_contribution": 0.6345107935143645
+      },
+      {
+        "feature": "Attribute7",
+        "transformed_feature": "Attribute7 = A75",
+        "good_log_odds_contribution": 0.05794484877848145
+      },
+      {
+        "feature": "Attribute9",
+        "transformed_feature": "Attribute9 = A92",
+        "good_log_odds_contribution": -0.08423915098605499
+      },
+      {
+        "feature": "Attribute10",
+        "transformed_feature": "Attribute10 = A101",
+        "good_log_odds_contribution": -0.06851376096245833
+      },
+      {
+        "feature": "Attribute12",
+        "transformed_feature": "Attribute12 = A122",
+        "good_log_odds_contribution": 0.21148593570530302
+      },
+      {
+        "feature": "Attribute14",
+        "transformed_feature": "Attribute14 = A143",
+        "good_log_odds_contribution": 0.40554118889218566
+      },
+      {
+        "feature": "Attribute15",
+        "transformed_feature": "Attribute15 = A151",
+        "good_log_odds_contribution": -0.5836467112620352
+      },
+      {
+        "feature": "Attribute17",
+        "transformed_feature": "Attribute17 = A173",
+        "good_log_odds_contribution": -0.13125936204035282
+      },
+      {
+        "feature": "Attribute19",
+        "transformed_feature": "Attribute19 = A192",
+        "good_log_odds_contribution": 0.16814997114001132
+      },
+      {
+        "feature": "Attribute20",
+        "transformed_feature": "Attribute20 = A201",
+        "good_log_odds_contribution": -0.575405527322561
+      }
+    ],
+    "strongest_towards_good": [
+      {
+        "feature": "Attribute6",
+        "transformed_feature": "Attribute6 = A64",
+        "good_log_odds_contribution": 0.6345107935143645
+      },
+      {
+        "feature": "Attribute14",
+        "transformed_feature": "Attribute14 = A143",
+        "good_log_odds_contribution": 0.40554118889218566
+      },
+      {
+        "feature": "Attribute12",
+        "transformed_feature": "Attribute12 = A122",
+        "good_log_odds_contribution": 0.21148593570530302
+      }
+    ],
+    "strongest_towards_bad": [
+      {
+        "feature": "Attribute1",
+        "transformed_feature": "Attribute1 = A11",
+        "good_log_odds_contribution": -0.658934727509013
+      },
+      {
+        "feature": "Attribute15",
+        "transformed_feature": "Attribute15 = A151",
+        "good_log_odds_contribution": -0.5836467112620352
+      },
+      {
+        "feature": "Attribute20",
+        "transformed_feature": "Attribute20 = A201",
+        "good_log_odds_contribution": -0.575405527322561
+      }
+    ],
+    "near_threshold": true,
+    "explanation": "The model predicts Bad risk (Good-risk probability 49.9%). The listed factors add to a Good-versus-Bad log-odds score of -0.004. The probabilities are close to 50%, so this prediction is relatively uncertain; a probability is not a guarantee.",
+    "applicant": {
+      "Attribute1": "A11",
+      "Attribute2": 30,
+      "Attribute3": "A32",
+      "Attribute4": "A42",
+      "Attribute5": 3622,
+      "Attribute6": "A64",
+      "Attribute7": "A75",
+      "Attribute8": 4,
+      "Attribute9": "A92",
+      "Attribute10": "A101",
+      "Attribute11": 4,
+      "Attribute12": "A122",
+      "Attribute14": "A143",
+      "Attribute15": "A151",
+      "Attribute16": 2,
+      "Attribute17": "A173",
+      "Attribute18": 1,
+      "Attribute19": "A192",
+      "Attribute20": "A201"
+    },
+    "demonstration_type": "Relatively uncertain"
+  }
+]

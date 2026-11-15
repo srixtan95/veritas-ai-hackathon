@@ -1,0 +1,25 @@
+{
+  "synthetic_demonstration": true,
+  "assessment": {
+    "monthly_income": 60000.0,
+    "existing_monthly_loan_repayments": 8000.0,
+    "other_recurring_monthly_obligations": 12000.0,
+    "total_monthly_obligations": 20000.0,
+    "disposable_income_after_existing_obligations": 40000.0,
+    "affordability_percentage": 30.0,
+    "affordability_assumption": "Illustrative maximum EMI = 30% of nonnegative disposable income; this is a prototype assumption, not a validated lending standard.",
+    "proposed_annual_interest_rate_percentage": 12.0,
+    "proposed_tenure_months": 36,
+    "maximum_illustrative_affordable_emi": 12000.0,
+    "indicative_maximum_loan_principal": 361290.0604472892,
+    "proposed_loan_amount": 700000.0,
+    "proposed_monthly_emi": 23250.016868995837,
+    "proposed_total_repayment": 837000.6072838502,
+    "proposed_total_interest": 137000.6072838502,
+    "proposed_emi_exceeds_illustrative_affordable_emi": true,
+    "remaining_monthly_income_after_proposed_loan": 16749.983131004163,
+    "assessment": "above_illustrative_limit",
+    "assessment_message": "The proposed EMI exceeds the illustrative affordability limit. This is a budgeting signal, not an automatic credit rejection.",
+    "disclaimer": "This calculation is an illustrative budgeting estimate, not a guarantee of repayment ability, a creditworthiness decision, or an approval or rejection. It is separate from the Immortals AI credit-risk prediction model."
+  }
+}

@@ -1,0 +1,22 @@
+experiment,metric,absolute_gap_percentage_points
+Reference (age excluded),Approval rate,17.343526039178215
+Reference (age excluded),False approval rate,6.675224646983313
+Reference (age excluded),False rejection rate,9.166666666666668
+Without Checking account status (Attribute1),Approval rate,5.223761745500877
+Without Checking account status (Attribute1),False approval rate,1.797175866495504
+Without Checking account status (Attribute1),False rejection rate,0.8333333333333331
+Without Loan purpose (Attribute4),Approval rate,14.779423475075648
+Without Loan purpose (Attribute4),False approval rate,6.290115532734281
+Without Loan purpose (Attribute4),False rejection rate,7.500000000000001
+Without Savings (Attribute6),Approval rate,14.078674948240167
+Without Savings (Attribute6),False approval rate,8.729139922978174
+Without Savings (Attribute6),False rejection rate,13.333333333333336
+Without Employment duration (Attribute7),Approval rate,10.351966873706008
+Without Employment duration (Attribute7),False approval rate,3.4659820282413323
+Without Employment duration (Attribute7),False rejection rate,3.3333333333333326
+Without Housing (Attribute15),Approval rate,12.215320910973093
+Without Housing (Attribute15),False approval rate,1.0269576379974277
+Without Housing (Attribute15),False rejection rate,4.999999999999999
+Without Savings + employment duration + housing,Approval rate,1.9589106545628288
+Without Savings + employment duration + housing,False approval rate,24.13350449293966
+Without Savings + employment duration + housing,False rejection rate,2.500000000000001

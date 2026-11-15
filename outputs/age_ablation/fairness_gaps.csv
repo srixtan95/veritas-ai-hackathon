@@ -1,0 +1,7 @@
+model,metric,absolute_gap_percentage_points
+Model A (all features),Approval rate,17.964644051600565
+Model A (all features),False approval rate,6.675224646983313
+Model A (all features),False rejection rate,10.0
+Model B (without age),Approval rate,17.343526039178215
+Model B (without age),False approval rate,6.675224646983313
+Model B (without age),False rejection rate,9.166666666666668

@@ -1,0 +1,561 @@
+model,repeat,metric,delta_vs_age_excluded,delta_type
+A: All features,1,accuracy,-0.0010000000000000009,model minus Model B
+A: All features,2,accuracy,-0.0010000000000000009,model minus Model B
+A: All features,3,accuracy,0.0030000000000000027,model minus Model B
+A: All features,4,accuracy,-0.0040000000000000036,model minus Model B
+A: All features,5,accuracy,-0.0050000000000000044,model minus Model B
+A: All features,6,accuracy,-0.0010000000000000009,model minus Model B
+A: All features,7,accuracy,0.007000000000000006,model minus Model B
+A: All features,8,accuracy,-0.0030000000000000027,model minus Model B
+A: All features,9,accuracy,0.0030000000000000027,model minus Model B
+A: All features,10,accuracy,0.0,model minus Model B
+A: All features,1,balanced_accuracy,-0.0007142857142857784,model minus Model B
+A: All features,2,balanced_accuracy,0.0011904761904761862,model minus Model B
+A: All features,3,balanced_accuracy,0.007857142857142785,model minus Model B
+A: All features,4,balanced_accuracy,-0.004761904761904745,model minus Model B
+A: All features,5,balanced_accuracy,-0.0016666666666667052,model minus Model B
+A: All features,6,balanced_accuracy,0.002142857142857113,model minus Model B
+A: All features,7,balanced_accuracy,0.008809523809523823,model minus Model B
+A: All features,8,balanced_accuracy,-0.0011904761904760752,model minus Model B
+A: All features,9,balanced_accuracy,0.0050000000000000044,model minus Model B
+A: All features,10,balanced_accuracy,0.0019047619047618536,model minus Model B
+A: All features,1,roc_auc,0.0003142857142858224,model minus Model B
+A: All features,2,roc_auc,0.0008095238095235935,model minus Model B
+A: All features,3,roc_auc,-0.0011238095238093049,model minus Model B
+A: All features,4,roc_auc,0.0016666666666667052,model minus Model B
+A: All features,5,roc_auc,0.0007666666666666933,model minus Model B
+A: All features,6,roc_auc,-0.0002095238095238816,model minus Model B
+A: All features,7,roc_auc,0.0011904761904760752,model minus Model B
+A: All features,8,roc_auc,-0.001071428571428612,model minus Model B
+A: All features,9,roc_auc,-0.001647619047619009,model minus Model B
+A: All features,10,roc_auc,-0.0009619047619047194,model minus Model B
+A: All features,1,error_cost_per_100,0.09999999999999432,model minus Model B
+A: All features,2,error_cost_per_100,-0.7000000000000028,model minus Model B
+A: All features,3,error_cost_per_100,-2.700000000000003,model minus Model B
+A: All features,4,error_cost_per_100,1.2000000000000028,model minus Model B
+A: All features,5,error_cost_per_100,-0.29999999999999716,model minus Model B
+A: All features,6,error_cost_per_100,-1.0999999999999943,model minus Model B
+A: All features,7,error_cost_per_100,-2.299999999999997,model minus Model B
+A: All features,8,error_cost_per_100,-0.09999999999999432,model minus Model B
+A: All features,9,error_cost_per_100,-1.5,model minus Model B
+A: All features,10,error_cost_per_100,-0.7999999999999972,model minus Model B
+A: All features,1,approval_rate_gap_pp,1.4597906923556128,gap difference vs Model B
+A: All features,2,approval_rate_gap_pp,4.144354450744892,gap difference vs Model B
+A: All features,3,approval_rate_gap_pp,2.0970196925843343,gap difference vs Model B
+A: All features,4,approval_rate_gap_pp,4.731898516549805,gap difference vs Model B
+A: All features,5,approval_rate_gap_pp,2.0970196925843254,gap difference vs Model B
+A: All features,6,approval_rate_gap_pp,3.9093368244229154,gap difference vs Model B
+A: All features,7,approval_rate_gap_pp,2.2484404451139195,gap difference vs Model B
+A: All features,8,approval_rate_gap_pp,3.3557046979865834,gap difference vs Model B
+A: All features,9,approval_rate_gap_pp,1.2247730660336469,gap difference vs Model B
+A: All features,10,approval_rate_gap_pp,1.8959140056309618,gap difference vs Model B
+A: All features,1,false_approval_rate_gap_pp,0.0,gap difference vs Model B
+A: All features,2,false_approval_rate_gap_pp,5.336442828726246,gap difference vs Model B
+A: All features,3,false_approval_rate_gap_pp,3.6628026613622406,gap difference vs Model B
+A: All features,4,false_approval_rate_gap_pp,4.9523286919541825,gap difference vs Model B
+A: All features,5,false_approval_rate_gap_pp,1.220934220454073,gap difference vs Model B
+A: All features,6,false_approval_rate_gap_pp,-2.791686672611282,gap difference vs Model B
+A: All features,7,false_approval_rate_gap_pp,2.0577543041360946,gap difference vs Model B
+A: All features,8,false_approval_rate_gap_pp,1.6393442622950838,gap difference vs Model B
+A: All features,9,false_approval_rate_gap_pp,-0.8025241786130732,gap difference vs Model B
+A: All features,10,false_approval_rate_gap_pp,3.2786885245901622,gap difference vs Model B
+A: All features,1,false_rejection_rate_gap_pp,2.4361259655377268,gap difference vs Model B
+A: All features,2,false_rejection_rate_gap_pp,3.4090909090909065,gap difference vs Model B
+A: All features,3,false_rejection_rate_gap_pp,0.809566250742721,gap difference vs Model B
+A: All features,4,false_rejection_rate_gap_pp,4.872251931075462,gap difference vs Model B
+A: All features,5,false_rejection_rate_gap_pp,2.755496137849086,gap difference vs Model B
+A: All features,6,false_rejection_rate_gap_pp,3.245692216280448,gap difference vs Model B
+A: All features,7,false_rejection_rate_gap_pp,1.7899584076054627,gap difference vs Model B
+A: All features,8,false_rejection_rate_gap_pp,4.545454545454547,gap difference vs Model B
+A: All features,9,false_rejection_rate_gap_pp,1.2997623291740918,gap difference vs Model B
+A: All features,10,false_rejection_rate_gap_pp,0.972964943553178,gap difference vs Model B
+A: All features,1,true_positive_rate_gap_pp,2.4361259655377268,gap difference vs Model B
+A: All features,2,true_positive_rate_gap_pp,3.4090909090909065,gap difference vs Model B
+A: All features,3,true_positive_rate_gap_pp,0.809566250742721,gap difference vs Model B
+A: All features,4,true_positive_rate_gap_pp,4.872251931075462,gap difference vs Model B
+A: All features,5,true_positive_rate_gap_pp,2.755496137849086,gap difference vs Model B
+A: All features,6,true_positive_rate_gap_pp,3.245692216280448,gap difference vs Model B
+A: All features,7,true_positive_rate_gap_pp,1.7899584076054627,gap difference vs Model B
+A: All features,8,true_positive_rate_gap_pp,4.545454545454547,gap difference vs Model B
+A: All features,9,true_positive_rate_gap_pp,1.2997623291740918,gap difference vs Model B
+A: All features,10,true_positive_rate_gap_pp,0.972964943553178,gap difference vs Model B
+C: Age + checking excluded,1,accuracy,-0.014000000000000012,model minus Model B
+C: Age + checking excluded,2,accuracy,-0.010000000000000009,model minus Model B
+C: Age + checking excluded,3,accuracy,-0.017000000000000015,model minus Model B
+C: Age + checking excluded,4,accuracy,-0.025000000000000022,model minus Model B
+C: Age + checking excluded,5,accuracy,-0.02300000000000002,model minus Model B
+C: Age + checking excluded,6,accuracy,-0.01100000000000001,model minus Model B
+C: Age + checking excluded,7,accuracy,-0.01100000000000001,model minus Model B
+C: Age + checking excluded,8,accuracy,-0.01200000000000001,model minus Model B
+C: Age + checking excluded,9,accuracy,-0.010000000000000009,model minus Model B
+C: Age + checking excluded,10,accuracy,-0.017000000000000015,model minus Model B
+C: Age + checking excluded,1,balanced_accuracy,-0.030952380952380953,model minus Model B
+C: Age + checking excluded,2,balanced_accuracy,-0.027142857142857135,model minus Model B
+C: Age + checking excluded,3,balanced_accuracy,-0.036904761904761996,model minus Model B
+C: Age + checking excluded,4,balanced_accuracy,-0.0407142857142857,model minus Model B
+C: Age + checking excluded,5,balanced_accuracy,-0.04785714285714282,model minus Model B
+C: Age + checking excluded,6,balanced_accuracy,-0.02880952380952384,model minus Model B
+C: Age + checking excluded,7,balanced_accuracy,-0.03642857142857148,model minus Model B
+C: Age + checking excluded,8,balanced_accuracy,-0.029523809523809508,model minus Model B
+C: Age + checking excluded,9,balanced_accuracy,-0.02619047619047621,model minus Model B
+C: Age + checking excluded,10,balanced_accuracy,-0.03595238095238096,model minus Model B
+C: Age + checking excluded,1,roc_auc,-0.03637142857142839,model minus Model B
+C: Age + checking excluded,2,roc_auc,-0.03610476190476197,model minus Model B
+C: Age + checking excluded,3,roc_auc,-0.035185714285714265,model minus Model B
+C: Age + checking excluded,4,roc_auc,-0.039319047619047476,model minus Model B
+C: Age + checking excluded,5,roc_auc,-0.038314285714285745,model minus Model B
+C: Age + checking excluded,6,roc_auc,-0.03958095238095238,model minus Model B
+C: Age + checking excluded,7,roc_auc,-0.03548095238095239,model minus Model B
+C: Age + checking excluded,8,roc_auc,-0.04208095238095222,model minus Model B
+C: Age + checking excluded,9,roc_auc,-0.03595238095238096,model minus Model B
+C: Age + checking excluded,10,roc_auc,-0.041752380952380874,model minus Model B
+C: Age + checking excluded,1,error_cost_per_100,10.200000000000003,model minus Model B
+C: Age + checking excluded,2,error_cost_per_100,9.399999999999991,model minus Model B
+C: Age + checking excluded,3,error_cost_per_100,12.099999999999994,model minus Model B
+C: Age + checking excluded,4,error_cost_per_100,12.100000000000009,model minus Model B
+C: Age + checking excluded,5,error_cost_per_100,15.5,model minus Model B
+C: Age + checking excluded,6,error_cost_per_100,9.900000000000006,model minus Model B
+C: Age + checking excluded,7,error_cost_per_100,13.099999999999994,model minus Model B
+C: Age + checking excluded,8,error_cost_per_100,10.0,model minus Model B
+C: Age + checking excluded,9,error_cost_per_100,9.0,model minus Model B
+C: Age + checking excluded,10,error_cost_per_100,11.700000000000003,model minus Model B
+C: Age + checking excluded,1,approval_rate_gap_pp,-5.938532638270033,gap difference vs Model B
+C: Age + checking excluded,2,approval_rate_gap_pp,-5.703515011948035,gap difference vs Model B
+C: Age + checking excluded,3,approval_rate_gap_pp,-6.928288077981682,gap difference vs Model B
+C: Age + checking excluded,4,approval_rate_gap_pp,-3.606495319363722,gap difference vs Model B
+C: Age + checking excluded,5,approval_rate_gap_pp,-8.354166830968701,gap difference vs Model B
+C: Age + checking excluded,6,approval_rate_gap_pp,-0.06545792947892792,gap difference vs Model B
+C: Age + checking excluded,7,approval_rate_gap_pp,-2.917215435452958,gap difference vs Model B
+C: Age + checking excluded,8,approval_rate_gap_pp,-3.3375657536731325,gap difference vs Model B
+C: Age + checking excluded,9,approval_rate_gap_pp,-5.149882885511726,gap difference vs Model B
+C: Age + checking excluded,10,approval_rate_gap_pp,-3.2200569405121495,gap difference vs Model B
+C: Age + checking excluded,1,false_approval_rate_gap_pp,-3.1415049043144183,gap difference vs Model B
+C: Age + checking excluded,2,false_approval_rate_gap_pp,-1.5021606420193456,gap difference vs Model B
+C: Age + checking excluded,3,false_approval_rate_gap_pp,2.64764387132177,gap difference vs Model B
+C: Age + checking excluded,4,false_approval_rate_gap_pp,1.8108237876397588,gap difference vs Model B
+C: Age + checking excluded,5,false_approval_rate_gap_pp,1.461005555936612,gap difference vs Model B
+C: Age + checking excluded,6,false_approval_rate_gap_pp,-2.6202071472666066,gap difference vs Model B
+C: Age + checking excluded,7,false_approval_rate_gap_pp,5.9949242060498005,gap difference vs Model B
+C: Age + checking excluded,8,false_approval_rate_gap_pp,3.0317580080938433,gap difference vs Model B
+C: Age + checking excluded,9,false_approval_rate_gap_pp,-2.1675012003566807,gap difference vs Model B
+C: Age + checking excluded,10,false_approval_rate_gap_pp,4.286988133616843,gap difference vs Model B
+C: Age + checking excluded,1,false_rejection_rate_gap_pp,-6.491384432560904,gap difference vs Model B
+C: Age + checking excluded,2,false_rejection_rate_gap_pp,-7.300950683303623,gap difference vs Model B
+C: Age + checking excluded,3,false_rejection_rate_gap_pp,-11.527035056446824,gap difference vs Model B
+C: Age + checking excluded,4,false_rejection_rate_gap_pp,-5.362448009506835,gap difference vs Model B
+C: Age + checking excluded,5,false_rejection_rate_gap_pp,-12.663398692810453,gap difference vs Model B
+C: Age + checking excluded,6,false_rejection_rate_gap_pp,-2.1019013666072475,gap difference vs Model B
+C: Age + checking excluded,7,false_rejection_rate_gap_pp,-7.29352346999406,gap difference vs Model B
+C: Age + checking excluded,8,false_rejection_rate_gap_pp,-6.164587046939988,gap difference vs Model B
+C: Age + checking excluded,9,false_rejection_rate_gap_pp,-8.764111705288176,gap difference vs Model B
+C: Age + checking excluded,10,false_rejection_rate_gap_pp,-6.491384432560904,gap difference vs Model B
+C: Age + checking excluded,1,true_positive_rate_gap_pp,-6.491384432560904,gap difference vs Model B
+C: Age + checking excluded,2,true_positive_rate_gap_pp,-7.300950683303623,gap difference vs Model B
+C: Age + checking excluded,3,true_positive_rate_gap_pp,-11.527035056446824,gap difference vs Model B
+C: Age + checking excluded,4,true_positive_rate_gap_pp,-5.362448009506835,gap difference vs Model B
+C: Age + checking excluded,5,true_positive_rate_gap_pp,-12.663398692810453,gap difference vs Model B
+C: Age + checking excluded,6,true_positive_rate_gap_pp,-2.1019013666072475,gap difference vs Model B
+C: Age + checking excluded,7,true_positive_rate_gap_pp,-7.29352346999406,gap difference vs Model B
+C: Age + checking excluded,8,true_positive_rate_gap_pp,-6.164587046939988,gap difference vs Model B
+C: Age + checking excluded,9,true_positive_rate_gap_pp,-8.764111705288176,gap difference vs Model B
+C: Age + checking excluded,10,true_positive_rate_gap_pp,-6.491384432560904,gap difference vs Model B
+D: Age + purpose excluded,1,accuracy,0.0030000000000000027,model minus Model B
+D: Age + purpose excluded,2,accuracy,-0.0050000000000000044,model minus Model B
+D: Age + purpose excluded,3,accuracy,0.009000000000000008,model minus Model B
+D: Age + purpose excluded,4,accuracy,0.0020000000000000018,model minus Model B
+D: Age + purpose excluded,5,accuracy,0.0,model minus Model B
+D: Age + purpose excluded,6,accuracy,-0.0020000000000000018,model minus Model B
+D: Age + purpose excluded,7,accuracy,0.0040000000000000036,model minus Model B
+D: Age + purpose excluded,8,accuracy,-0.009000000000000008,model minus Model B
+D: Age + purpose excluded,9,accuracy,-0.0020000000000000018,model minus Model B
+D: Age + purpose excluded,10,accuracy,-0.0050000000000000044,model minus Model B
+D: Age + purpose excluded,1,balanced_accuracy,-0.00642857142857145,model minus Model B
+D: Age + purpose excluded,2,balanced_accuracy,-0.01595238095238094,model minus Model B
+D: Age + purpose excluded,3,balanced_accuracy,0.010238095238095157,model minus Model B
+D: Age + purpose excluded,4,balanced_accuracy,-0.0033333333333334103,model minus Model B
+D: Age + purpose excluded,5,balanced_accuracy,-0.0019047619047618536,model minus Model B
+D: Age + purpose excluded,6,balanced_accuracy,-0.0071428571428572285,model minus Model B
+D: Age + purpose excluded,7,balanced_accuracy,-0.00666666666666671,model minus Model B
+D: Age + purpose excluded,8,balanced_accuracy,-0.016904761904761867,model minus Model B
+D: Age + purpose excluded,9,balanced_accuracy,-0.005238095238095264,model minus Model B
+D: Age + purpose excluded,10,balanced_accuracy,-0.007380952380952488,model minus Model B
+D: Age + purpose excluded,1,roc_auc,-0.010609523809523624,model minus Model B
+D: Age + purpose excluded,2,roc_auc,-0.008847619047619215,model minus Model B
+D: Age + purpose excluded,3,roc_auc,-0.005480952380952253,model minus Model B
+D: Age + purpose excluded,4,roc_auc,-0.0062190476190475685,model minus Model B
+D: Age + purpose excluded,5,roc_auc,-0.00886666666666669,model minus Model B
+D: Age + purpose excluded,6,roc_auc,-0.012628571428571433,model minus Model B
+D: Age + purpose excluded,7,roc_auc,-0.010680952380952458,model minus Model B
+D: Age + purpose excluded,8,roc_auc,-0.01412857142857138,model minus Model B
+D: Age + purpose excluded,9,roc_auc,-0.011666666666666825,model minus Model B
+D: Age + purpose excluded,10,roc_auc,-0.013366666666666638,model minus Model B
+D: Age + purpose excluded,1,error_cost_per_100,3.299999999999997,model minus Model B
+D: Age + purpose excluded,2,error_cost_per_100,5.699999999999989,model minus Model B
+D: Age + purpose excluded,3,error_cost_per_100,-2.5,model minus Model B
+D: Age + purpose excluded,4,error_cost_per_100,1.7999999999999972,model minus Model B
+D: Age + purpose excluded,5,error_cost_per_100,0.7999999999999972,model minus Model B
+D: Age + purpose excluded,6,error_cost_per_100,2.5999999999999943,model minus Model B
+D: Age + purpose excluded,7,error_cost_per_100,3.5999999999999943,model minus Model B
+D: Age + purpose excluded,8,error_cost_per_100,5.299999999999997,model minus Model B
+D: Age + purpose excluded,9,error_cost_per_100,1.7999999999999972,model minus Model B
+D: Age + purpose excluded,10,error_cost_per_100,2.0999999999999943,model minus Model B
+D: Age + purpose excluded,1,approval_rate_gap_pp,0.10173581810580856,gap difference vs Model B
+D: Age + purpose excluded,2,approval_rate_gap_pp,1.6790353236224345,gap difference vs Model B
+D: Age + purpose excluded,3,approval_rate_gap_pp,0.9061585659192897,gap difference vs Model B
+D: Age + purpose excluded,4,approval_rate_gap_pp,0.6214560051735276,gap difference vs Model B
+D: Age + purpose excluded,5,approval_rate_gap_pp,-1.8959140056309494,gap difference vs Model B
+D: Age + purpose excluded,6,approval_rate_gap_pp,2.752387637126475,gap difference vs Model B
+D: Age + purpose excluded,7,approval_rate_gap_pp,2.82021151586369,gap difference vs Model B
+D: Age + purpose excluded,8,approval_rate_gap_pp,0.7389648183345319,gap difference vs Model B
+D: Age + purpose excluded,9,approval_rate_gap_pp,3.0710021372408303,gap difference vs Model B
+D: Age + purpose excluded,10,approval_rate_gap_pp,-2.0134228187919536,gap difference vs Model B
+D: Age + purpose excluded,1,false_approval_rate_gap_pp,7.88119898484122,gap difference vs Model B
+D: Age + purpose excluded,2,false_approval_rate_gap_pp,7.497084848069146,gap difference vs Model B
+D: Age + purpose excluded,3,false_approval_rate_gap_pp,4.499622745044252,gap difference vs Model B
+D: Age + purpose excluded,4,false_approval_rate_gap_pp,2.092050209205021,gap difference vs Model B
+D: Age + purpose excluded,5,false_approval_rate_gap_pp,0.8368200836819994,gap difference vs Model B
+D: Age + purpose excluded,6,false_approval_rate_gap_pp,3.0317580080938438,gap difference vs Model B
+D: Age + purpose excluded,7,false_approval_rate_gap_pp,9.973249194046236,gap difference vs Model B
+D: Age + purpose excluded,8,false_approval_rate_gap_pp,2.544756156114969,gap difference vs Model B
+D: Age + purpose excluded,9,false_approval_rate_gap_pp,5.542218259139863,gap difference vs Model B
+D: Age + purpose excluded,10,false_approval_rate_gap_pp,-2.4418684409081566,gap difference vs Model B
+D: Age + purpose excluded,1,false_rejection_rate_gap_pp,-4.538027332144981,gap difference vs Model B
+D: Age + purpose excluded,2,false_rejection_rate_gap_pp,-1.2923351158645247,gap difference vs Model B
+D: Age + purpose excluded,3,false_rejection_rate_gap_pp,-1.7825311942959008,gap difference vs Model B
+D: Age + purpose excluded,4,false_rejection_rate_gap_pp,-0.1559714795008933,gap difference vs Model B
+D: Age + purpose excluded,5,false_rejection_rate_gap_pp,-3.5724896019013617,gap difference vs Model B
+D: Age + purpose excluded,6,false_rejection_rate_gap_pp,-1.9459298871063577,gap difference vs Model B
+D: Age + purpose excluded,7,false_rejection_rate_gap_pp,-1.6117052881758784,gap difference vs Model B
+D: Age + purpose excluded,8,false_rejection_rate_gap_pp,0.32679738562091565,gap difference vs Model B
+D: Age + purpose excluded,9,false_rejection_rate_gap_pp,-0.972964943553178,gap difference vs Model B
+D: Age + purpose excluded,10,false_rejection_rate_gap_pp,-1.4631610219845506,gap difference vs Model B
+D: Age + purpose excluded,1,true_positive_rate_gap_pp,-4.538027332144981,gap difference vs Model B
+D: Age + purpose excluded,2,true_positive_rate_gap_pp,-1.2923351158645247,gap difference vs Model B
+D: Age + purpose excluded,3,true_positive_rate_gap_pp,-1.7825311942959008,gap difference vs Model B
+D: Age + purpose excluded,4,true_positive_rate_gap_pp,-0.1559714795008933,gap difference vs Model B
+D: Age + purpose excluded,5,true_positive_rate_gap_pp,-3.5724896019013617,gap difference vs Model B
+D: Age + purpose excluded,6,true_positive_rate_gap_pp,-1.9459298871063577,gap difference vs Model B
+D: Age + purpose excluded,7,true_positive_rate_gap_pp,-1.6117052881758784,gap difference vs Model B
+D: Age + purpose excluded,8,true_positive_rate_gap_pp,0.32679738562091565,gap difference vs Model B
+D: Age + purpose excluded,9,true_positive_rate_gap_pp,-0.972964943553178,gap difference vs Model B
+D: Age + purpose excluded,10,true_positive_rate_gap_pp,-1.4631610219845506,gap difference vs Model B
+E: Age + savings excluded,1,accuracy,-0.0010000000000000009,model minus Model B
+E: Age + savings excluded,2,accuracy,0.0050000000000000044,model minus Model B
+E: Age + savings excluded,3,accuracy,-0.007000000000000006,model minus Model B
+E: Age + savings excluded,4,accuracy,-0.006000000000000005,model minus Model B
+E: Age + savings excluded,5,accuracy,0.008000000000000007,model minus Model B
+E: Age + savings excluded,6,accuracy,0.0040000000000000036,model minus Model B
+E: Age + savings excluded,7,accuracy,-0.0030000000000000027,model minus Model B
+E: Age + savings excluded,8,accuracy,-0.0030000000000000027,model minus Model B
+E: Age + savings excluded,9,accuracy,0.0,model minus Model B
+E: Age + savings excluded,10,accuracy,0.0030000000000000027,model minus Model B
+E: Age + savings excluded,1,balanced_accuracy,-0.005476190476190523,model minus Model B
+E: Age + savings excluded,2,balanced_accuracy,-0.00023809523809525945,model minus Model B
+E: Age + savings excluded,3,balanced_accuracy,-0.01261904761904764,model minus Model B
+E: Age + savings excluded,4,balanced_accuracy,-0.010000000000000009,model minus Model B
+E: Age + savings excluded,5,balanced_accuracy,0.00952380952380949,model minus Model B
+E: Age + savings excluded,6,balanced_accuracy,0.0,model minus Model B
+E: Age + savings excluded,7,balanced_accuracy,-0.010714285714285787,model minus Model B
+E: Age + savings excluded,8,balanced_accuracy,-0.005952380952380931,model minus Model B
+E: Age + savings excluded,9,balanced_accuracy,-0.0009523809523809268,model minus Model B
+E: Age + savings excluded,10,balanced_accuracy,0.004047619047618967,model minus Model B
+E: Age + savings excluded,1,roc_auc,-0.00522857142857136,model minus Model B
+E: Age + savings excluded,2,roc_auc,-0.004266666666666641,model minus Model B
+E: Age + savings excluded,3,roc_auc,-0.0013666666666666272,model minus Model B
+E: Age + savings excluded,4,roc_auc,-0.006333333333333302,model minus Model B
+E: Age + savings excluded,5,roc_auc,-0.003619047619047633,model minus Model B
+E: Age + savings excluded,6,roc_auc,-0.002647619047619121,model minus Model B
+E: Age + savings excluded,7,roc_auc,-0.005538095238095231,model minus Model B
+E: Age + savings excluded,8,roc_auc,-0.006776190476190491,model minus Model B
+E: Age + savings excluded,9,roc_auc,-0.007523809523809488,model minus Model B
+E: Age + savings excluded,10,roc_auc,-0.0030523809523809176,model minus Model B
+E: Age + savings excluded,1,error_cost_per_100,2.0999999999999943,model minus Model B
+E: Age + savings excluded,2,error_cost_per_100,1.0999999999999943,model minus Model B
+E: Age + savings excluded,3,error_cost_per_100,3.8999999999999915,model minus Model B
+E: Age + savings excluded,4,error_cost_per_100,3.0,model minus Model B
+E: Age + savings excluded,5,error_cost_per_100,-2.4000000000000057,model minus Model B
+E: Age + savings excluded,6,error_cost_per_100,0.7999999999999972,model minus Model B
+E: Age + savings excluded,7,error_cost_per_100,3.8999999999999915,model minus Model B
+E: Age + savings excluded,8,error_cost_per_100,1.9000000000000057,model minus Model B
+E: Age + savings excluded,9,error_cost_per_100,0.4000000000000057,model minus Model B
+E: Age + savings excluded,10,error_cost_per_100,-1.0999999999999943,model minus Model B
+E: Age + savings excluded,1,approval_rate_gap_pp,-5.2516187036175435,gap difference vs Model B
+E: Age + savings excluded,2,approval_rate_gap_pp,-0.8383346871820745,gap difference vs Model B
+E: Age + savings excluded,3,approval_rate_gap_pp,-2.0970196925843236,gap difference vs Model B
+E: Age + savings excluded,4,approval_rate_gap_pp,-1.6608963793089941,gap difference vs Model B
+E: Age + savings excluded,5,approval_rate_gap_pp,-1.5772995055166046,gap difference vs Model B
+E: Age + savings excluded,6,approval_rate_gap_pp,2.752387637126475,gap difference vs Model B
+E: Age + savings excluded,7,approval_rate_gap_pp,3.339931702931409,gap difference vs Model B
+E: Age + savings excluded,8,approval_rate_gap_pp,-0.9897554397116703,gap difference vs Model B
+E: Age + savings excluded,9,approval_rate_gap_pp,1.0236673790802726,gap difference vs Model B
+E: Age + savings excluded,10,approval_rate_gap_pp,0.6711409395973149,gap difference vs Model B
+E: Age + savings excluded,1,false_approval_rate_gap_pp,1.0494546951094086,gap difference vs Model B
+E: Age + savings excluded,2,false_approval_rate_gap_pp,1.673640167364021,gap difference vs Model B
+E: Age + savings excluded,3,false_approval_rate_gap_pp,5.405034638864126,gap difference vs Model B
+E: Age + savings excluded,4,false_approval_rate_gap_pp,-1.6050483572261465,gap difference vs Model B
+E: Age + savings excluded,5,false_approval_rate_gap_pp,0.38411413677206796,gap difference vs Model B
+E: Age + savings excluded,6,false_approval_rate_gap_pp,-3.3129844296590827,gap difference vs Model B
+E: Age + savings excluded,7,false_approval_rate_gap_pp,7.4970848480691465,gap difference vs Model B
+E: Age + savings excluded,8,false_approval_rate_gap_pp,-0.2057754304136017,gap difference vs Model B
+E: Age + savings excluded,9,false_approval_rate_gap_pp,2.229233829480759,gap difference vs Model B
+E: Age + savings excluded,10,false_approval_rate_gap_pp,5.336442828726257,gap difference vs Model B
+E: Age + savings excluded,1,false_rejection_rate_gap_pp,-3.2456922162804513,gap difference vs Model B
+E: Age + savings excluded,2,false_rejection_rate_gap_pp,-2.428698752228163,gap difference vs Model B
+E: Age + savings excluded,3,false_rejection_rate_gap_pp,-6.335412953060013,gap difference vs Model B
+E: Age + savings excluded,4,false_rejection_rate_gap_pp,-1.2997623291740954,gap difference vs Model B
+E: Age + savings excluded,5,false_rejection_rate_gap_pp,-3.245692216280448,gap difference vs Model B
+E: Age + savings excluded,6,false_rejection_rate_gap_pp,2.4435531788472957,gap difference vs Model B
+E: Age + savings excluded,7,false_rejection_rate_gap_pp,0.9803921568627416,gap difference vs Model B
+E: Age + savings excluded,8,false_rejection_rate_gap_pp,-1.136363636363635,gap difference vs Model B
+E: Age + savings excluded,9,false_rejection_rate_gap_pp,-2.4361259655377268,gap difference vs Model B
+E: Age + savings excluded,10,false_rejection_rate_gap_pp,-2.436125965537732,gap difference vs Model B
+E: Age + savings excluded,1,true_positive_rate_gap_pp,-3.2456922162804513,gap difference vs Model B
+E: Age + savings excluded,2,true_positive_rate_gap_pp,-2.428698752228163,gap difference vs Model B
+E: Age + savings excluded,3,true_positive_rate_gap_pp,-6.335412953060013,gap difference vs Model B
+E: Age + savings excluded,4,true_positive_rate_gap_pp,-1.2997623291740954,gap difference vs Model B
+E: Age + savings excluded,5,true_positive_rate_gap_pp,-3.245692216280448,gap difference vs Model B
+E: Age + savings excluded,6,true_positive_rate_gap_pp,2.4435531788472957,gap difference vs Model B
+E: Age + savings excluded,7,true_positive_rate_gap_pp,0.9803921568627416,gap difference vs Model B
+E: Age + savings excluded,8,true_positive_rate_gap_pp,-1.136363636363635,gap difference vs Model B
+E: Age + savings excluded,9,true_positive_rate_gap_pp,-2.4361259655377268,gap difference vs Model B
+E: Age + savings excluded,10,true_positive_rate_gap_pp,-2.436125965537732,gap difference vs Model B
+F: Age + employment excluded,1,accuracy,0.0050000000000000044,model minus Model B
+F: Age + employment excluded,2,accuracy,0.0040000000000000036,model minus Model B
+F: Age + employment excluded,3,accuracy,-0.0020000000000000018,model minus Model B
+F: Age + employment excluded,4,accuracy,-0.0020000000000000018,model minus Model B
+F: Age + employment excluded,5,accuracy,-0.0050000000000000044,model minus Model B
+F: Age + employment excluded,6,accuracy,-0.0040000000000000036,model minus Model B
+F: Age + employment excluded,7,accuracy,-0.0050000000000000044,model minus Model B
+F: Age + employment excluded,8,accuracy,0.0050000000000000044,model minus Model B
+F: Age + employment excluded,9,accuracy,0.0010000000000000009,model minus Model B
+F: Age + employment excluded,10,accuracy,0.0040000000000000036,model minus Model B
+F: Age + employment excluded,1,balanced_accuracy,0.0035714285714285587,model minus Model B
+F: Age + employment excluded,2,balanced_accuracy,0.0028571428571428914,model minus Model B
+F: Age + employment excluded,3,balanced_accuracy,-0.0023809523809523725,model minus Model B
+F: Age + employment excluded,4,balanced_accuracy,-0.005238095238095264,model minus Model B
+F: Age + employment excluded,5,balanced_accuracy,-0.00642857142857145,model minus Model B
+F: Age + employment excluded,6,balanced_accuracy,-0.0028571428571428914,model minus Model B
+F: Age + employment excluded,7,balanced_accuracy,-0.010238095238095268,model minus Model B
+F: Age + employment excluded,8,balanced_accuracy,0.0035714285714285587,model minus Model B
+F: Age + employment excluded,9,balanced_accuracy,0.002619047619047632,model minus Model B
+F: Age + employment excluded,10,balanced_accuracy,0.006666666666666599,model minus Model B
+F: Age + employment excluded,1,roc_auc,-0.0015666666666666051,model minus Model B
+F: Age + employment excluded,2,roc_auc,-0.0009857142857143675,model minus Model B
+F: Age + employment excluded,3,roc_auc,-0.002790476190476232,model minus Model B
+F: Age + employment excluded,4,roc_auc,0.001523809523809705,model minus Model B
+F: Age + employment excluded,5,roc_auc,-0.002342857142857202,model minus Model B
+F: Age + employment excluded,6,roc_auc,-0.0015285714285714347,model minus Model B
+F: Age + employment excluded,7,roc_auc,-0.0022380952380952612,model minus Model B
+F: Age + employment excluded,8,roc_auc,-9.999999999987796e-05,model minus Model B
+F: Age + employment excluded,9,roc_auc,-0.0021333333333334314,model minus Model B
+F: Age + employment excluded,10,roc_auc,-0.0026761904761904987,model minus Model B
+F: Age + employment excluded,1,error_cost_per_100,-0.5,model minus Model B
+F: Age + employment excluded,2,error_cost_per_100,-0.4000000000000057,model minus Model B
+F: Age + employment excluded,3,error_cost_per_100,0.5999999999999943,model minus Model B
+F: Age + employment excluded,4,error_cost_per_100,1.7999999999999972,model minus Model B
+F: Age + employment excluded,5,error_cost_per_100,1.7000000000000028,model minus Model B
+F: Age + employment excluded,6,error_cost_per_100,0.4000000000000057,model minus Model B
+F: Age + employment excluded,7,error_cost_per_100,3.299999999999997,model minus Model B
+F: Age + employment excluded,8,error_cost_per_100,-0.5,model minus Model B
+F: Age + employment excluded,9,error_cost_per_100,-0.9000000000000057,model minus Model B
+F: Age + employment excluded,10,error_cost_per_100,-2.0,model minus Model B
+F: Age + employment excluded,1,approval_rate_gap_pp,-1.778405192469977,gap difference vs Model B
+F: Age + employment excluded,2,approval_rate_gap_pp,-2.684563758389258,gap difference vs Model B
+F: Age + employment excluded,3,approval_rate_gap_pp,-5.5205482693081125,gap difference vs Model B
+F: Age + employment excluded,4,approval_rate_gap_pp,0.705052878965919,gap difference vs Model B
+F: Age + employment excluded,5,approval_rate_gap_pp,-1.459790692355611,gap difference vs Model B
+F: Age + employment excluded,6,approval_rate_gap_pp,-0.47003525264394064,gap difference vs Model B
+F: Age + employment excluded,7,approval_rate_gap_pp,0.2689295656905788,gap difference vs Model B
+F: Age + employment excluded,8,approval_rate_gap_pp,-0.9897554397116703,gap difference vs Model B
+F: Age + employment excluded,9,approval_rate_gap_pp,-1.929825944999564,gap difference vs Model B
+F: Age + employment excluded,10,approval_rate_gap_pp,-1.2586850054022491,gap difference vs Model B
+F: Age + employment excluded,1,false_approval_rate_gap_pp,-2.0577543041360835,gap difference vs Model B
+F: Age + employment excluded,2,false_approval_rate_gap_pp,-0.5212977570478006,gap difference vs Model B
+F: Age + employment excluded,3,false_approval_rate_gap_pp,3.5599149461554287,gap difference vs Model B
+F: Age + employment excluded,4,false_approval_rate_gap_pp,-0.3841141367720624,gap difference vs Model B
+F: Age + employment excluded,5,false_approval_rate_gap_pp,-0.8025241786130843,gap difference vs Model B
+F: Age + employment excluded,6,false_approval_rate_gap_pp,-3.5942108512243554,gap difference vs Model B
+F: Age + employment excluded,7,false_approval_rate_gap_pp,0.48700185197887436,gap difference vs Model B
+F: Age + employment excluded,8,false_approval_rate_gap_pp,1.4678647369504083,gap difference vs Model B
+F: Age + employment excluded,9,false_approval_rate_gap_pp,2.894574387818094,gap difference vs Model B
+F: Age + employment excluded,10,false_approval_rate_gap_pp,-3.731394471500104,gap difference vs Model B
+F: Age + employment excluded,1,false_rejection_rate_gap_pp,-1.7825311942959008,gap difference vs Model B
+F: Age + employment excluded,2,false_rejection_rate_gap_pp,-1.945929887106356,gap difference vs Model B
+F: Age + employment excluded,3,false_rejection_rate_gap_pp,-5.362448009506836,gap difference vs Model B
+F: Age + employment excluded,4,false_rejection_rate_gap_pp,1.6265597147950057,gap difference vs Model B
+F: Age + employment excluded,5,false_rejection_rate_gap_pp,-1.6265597147950057,gap difference vs Model B
+F: Age + employment excluded,6,false_rejection_rate_gap_pp,-3.2531194295900168,gap difference vs Model B
+F: Age + employment excluded,7,false_rejection_rate_gap_pp,0.32679738562091387,gap difference vs Model B
+F: Age + employment excluded,8,false_rejection_rate_gap_pp,-0.4827688651218054,gap difference vs Model B
+F: Age + employment excluded,9,false_rejection_rate_gap_pp,-1.4631610219845488,gap difference vs Model B
+F: Age + employment excluded,10,false_rejection_rate_gap_pp,0.0,gap difference vs Model B
+F: Age + employment excluded,1,true_positive_rate_gap_pp,-1.7825311942959008,gap difference vs Model B
+F: Age + employment excluded,2,true_positive_rate_gap_pp,-1.945929887106356,gap difference vs Model B
+F: Age + employment excluded,3,true_positive_rate_gap_pp,-5.362448009506836,gap difference vs Model B
+F: Age + employment excluded,4,true_positive_rate_gap_pp,1.6265597147950057,gap difference vs Model B
+F: Age + employment excluded,5,true_positive_rate_gap_pp,-1.6265597147950057,gap difference vs Model B
+F: Age + employment excluded,6,true_positive_rate_gap_pp,-3.2531194295900168,gap difference vs Model B
+F: Age + employment excluded,7,true_positive_rate_gap_pp,0.32679738562091387,gap difference vs Model B
+F: Age + employment excluded,8,true_positive_rate_gap_pp,-0.4827688651218054,gap difference vs Model B
+F: Age + employment excluded,9,true_positive_rate_gap_pp,-1.4631610219845488,gap difference vs Model B
+F: Age + employment excluded,10,true_positive_rate_gap_pp,0.0,gap difference vs Model B
+G: Age + housing excluded,1,accuracy,-0.0030000000000000027,model minus Model B
+G: Age + housing excluded,2,accuracy,0.006000000000000005,model minus Model B
+G: Age + housing excluded,3,accuracy,0.009000000000000008,model minus Model B
+G: Age + housing excluded,4,accuracy,-0.0040000000000000036,model minus Model B
+G: Age + housing excluded,5,accuracy,-0.0040000000000000036,model minus Model B
+G: Age + housing excluded,6,accuracy,0.0010000000000000009,model minus Model B
+G: Age + housing excluded,7,accuracy,0.0030000000000000027,model minus Model B
+G: Age + housing excluded,8,accuracy,-0.0040000000000000036,model minus Model B
+G: Age + housing excluded,9,accuracy,0.0030000000000000027,model minus Model B
+G: Age + housing excluded,10,accuracy,0.009000000000000008,model minus Model B
+G: Age + housing excluded,1,balanced_accuracy,-0.003095238095238151,model minus Model B
+G: Age + housing excluded,2,balanced_accuracy,0.006190476190476191,model minus Model B
+G: Age + housing excluded,3,balanced_accuracy,0.010238095238095157,model minus Model B
+G: Age + housing excluded,4,balanced_accuracy,-0.004761904761904745,model minus Model B
+G: Age + housing excluded,5,balanced_accuracy,-0.004761904761904745,model minus Model B
+G: Age + housing excluded,6,balanced_accuracy,0.0035714285714285587,model minus Model B
+G: Age + housing excluded,7,balanced_accuracy,0.004047619047619078,model minus Model B
+G: Age + housing excluded,8,balanced_accuracy,-0.005714285714285672,model minus Model B
+G: Age + housing excluded,9,balanced_accuracy,0.0050000000000000044,model minus Model B
+G: Age + housing excluded,10,balanced_accuracy,0.010238095238095157,model minus Model B
+G: Age + housing excluded,1,roc_auc,-0.0021285714285713686,model minus Model B
+G: Age + housing excluded,2,roc_auc,0.00039047619047616333,model minus Model B
+G: Age + housing excluded,3,roc_auc,-0.0015666666666666051,model minus Model B
+G: Age + housing excluded,4,roc_auc,-0.0004428571428570782,model minus Model B
+G: Age + housing excluded,5,roc_auc,0.0001619047619046965,model minus Model B
+G: Age + housing excluded,6,roc_auc,-0.000500000000000056,model minus Model B
+G: Age + housing excluded,7,roc_auc,-0.0016000000000000458,model minus Model B
+G: Age + housing excluded,8,roc_auc,-0.001371428571428468,model minus Model B
+G: Age + housing excluded,9,roc_auc,-0.0024000000000000687,model minus Model B
+G: Age + housing excluded,10,roc_auc,0.0019238095238095498,model minus Model B
+G: Age + housing excluded,1,error_cost_per_100,0.7000000000000028,model minus Model B
+G: Age + housing excluded,2,error_cost_per_100,-1.4000000000000057,model minus Model B
+G: Age + housing excluded,3,error_cost_per_100,-2.5,model minus Model B
+G: Age + housing excluded,4,error_cost_per_100,1.2000000000000028,model minus Model B
+G: Age + housing excluded,5,error_cost_per_100,1.2000000000000028,model minus Model B
+G: Age + housing excluded,6,error_cost_per_100,-1.2999999999999972,model minus Model B
+G: Age + housing excluded,7,error_cost_per_100,-1.1000000000000085,model minus Model B
+G: Age + housing excluded,8,error_cost_per_100,1.5999999999999943,model minus Model B
+G: Age + housing excluded,9,error_cost_per_100,-1.5,model minus Model B
+G: Age + housing excluded,10,error_cost_per_100,-2.5,model minus Model B
+G: Age + housing excluded,1,approval_rate_gap_pp,-3.2721078241942028,gap difference vs Model B
+G: Age + housing excluded,2,approval_rate_gap_pp,-2.9195813847112344,gap difference vs Model B
+G: Age + housing excluded,3,approval_rate_gap_pp,-5.403039456147119,gap difference vs Model B
+G: Age + housing excluded,4,approval_rate_gap_pp,0.0,gap difference vs Model B
+G: Age + housing excluded,5,approval_rate_gap_pp,-3.9432487637915177,gap difference vs Model B
+G: Age + housing excluded,6,approval_rate_gap_pp,1.7784051924699682,gap difference vs Model B
+G: Age + housing excluded,7,approval_rate_gap_pp,-3.2721078241942045,gap difference vs Model B
+G: Age + housing excluded,8,approval_rate_gap_pp,-1.342281879194628,gap difference vs Model B
+G: Age + housing excluded,9,approval_rate_gap_pp,-0.35252643948297013,gap difference vs Model B
+G: Age + housing excluded,10,approval_rate_gap_pp,-3.8257399506305365,gap difference vs Model B
+G: Age + housing excluded,1,false_approval_rate_gap_pp,-3.450168049934832,gap difference vs Model B
+G: Age + housing excluded,2,false_approval_rate_gap_pp,-1.7422319775018846,gap difference vs Model B
+G: Age + housing excluded,3,false_approval_rate_gap_pp,1.536456547088294,gap difference vs Model B
+G: Age + housing excluded,4,false_approval_rate_gap_pp,-1.220934220454073,gap difference vs Model B
+G: Age + housing excluded,5,false_approval_rate_gap_pp,2.441868440908157,gap difference vs Model B
+G: Age + housing excluded,6,false_approval_rate_gap_pp,-2.8602784827491456,gap difference vs Model B
+G: Age + housing excluded,7,false_approval_rate_gap_pp,9.067837300226355,gap difference vs Model B
+G: Age + housing excluded,8,false_approval_rate_gap_pp,0.21263461142739803,gap difference vs Model B
+G: Age + housing excluded,9,false_approval_rate_gap_pp,-0.8025241786130732,gap difference vs Model B
+G: Age + housing excluded,10,false_approval_rate_gap_pp,-3.731394471500104,gap difference vs Model B
+G: Age + housing excluded,1,false_rejection_rate_gap_pp,-2.9263220439691047,gap difference vs Model B
+G: Age + housing excluded,2,false_rejection_rate_gap_pp,-3.2456922162804522,gap difference vs Model B
+G: Age + housing excluded,3,false_rejection_rate_gap_pp,-6.981580510992279,gap difference vs Model B
+G: Age + housing excluded,4,false_rejection_rate_gap_pp,0.972964943553178,gap difference vs Model B
+G: Age + housing excluded,5,false_rejection_rate_gap_pp,-2.9263220439690976,gap difference vs Model B
+G: Age + housing excluded,6,false_rejection_rate_gap_pp,0.972964943553178,gap difference vs Model B
+G: Age + housing excluded,7,false_rejection_rate_gap_pp,0.16339869281045694,gap difference vs Model B
+G: Age + housing excluded,8,false_rejection_rate_gap_pp,-1.4631610219845506,gap difference vs Model B
+G: Age + housing excluded,9,false_rejection_rate_gap_pp,-1.2997623291740918,gap difference vs Model B
+G: Age + housing excluded,10,false_rejection_rate_gap_pp,-4.382055852644086,gap difference vs Model B
+G: Age + housing excluded,1,true_positive_rate_gap_pp,-2.9263220439691047,gap difference vs Model B
+G: Age + housing excluded,2,true_positive_rate_gap_pp,-3.2456922162804522,gap difference vs Model B
+G: Age + housing excluded,3,true_positive_rate_gap_pp,-6.981580510992279,gap difference vs Model B
+G: Age + housing excluded,4,true_positive_rate_gap_pp,0.972964943553178,gap difference vs Model B
+G: Age + housing excluded,5,true_positive_rate_gap_pp,-2.9263220439690976,gap difference vs Model B
+G: Age + housing excluded,6,true_positive_rate_gap_pp,0.972964943553178,gap difference vs Model B
+G: Age + housing excluded,7,true_positive_rate_gap_pp,0.16339869281045694,gap difference vs Model B
+G: Age + housing excluded,8,true_positive_rate_gap_pp,-1.4631610219845506,gap difference vs Model B
+G: Age + housing excluded,9,true_positive_rate_gap_pp,-1.2997623291740918,gap difference vs Model B
+G: Age + housing excluded,10,true_positive_rate_gap_pp,-4.382055852644086,gap difference vs Model B
+H: Age + savings + employment + housing excluded,1,accuracy,-0.0050000000000000044,model minus Model B
+H: Age + savings + employment + housing excluded,2,accuracy,0.0030000000000000027,model minus Model B
+H: Age + savings + employment + housing excluded,3,accuracy,-0.0030000000000000027,model minus Model B
+H: Age + savings + employment + housing excluded,4,accuracy,0.0,model minus Model B
+H: Age + savings + employment + housing excluded,5,accuracy,0.006000000000000005,model minus Model B
+H: Age + savings + employment + housing excluded,6,accuracy,0.010000000000000009,model minus Model B
+H: Age + savings + employment + housing excluded,7,accuracy,-0.0050000000000000044,model minus Model B
+H: Age + savings + employment + housing excluded,8,accuracy,0.0010000000000000009,model minus Model B
+H: Age + savings + employment + housing excluded,9,accuracy,0.0020000000000000018,model minus Model B
+H: Age + savings + employment + housing excluded,10,accuracy,0.007000000000000006,model minus Model B
+H: Age + savings + employment + housing excluded,1,balanced_accuracy,-0.01309523809523816,model minus Model B
+H: Age + savings + employment + housing excluded,2,balanced_accuracy,-0.0045238095238094855,model minus Model B
+H: Age + savings + employment + housing excluded,3,balanced_accuracy,-0.00976190476190475,model minus Model B
+H: Age + savings + employment + housing excluded,4,balanced_accuracy,-0.003809523809523818,model minus Model B
+H: Age + savings + employment + housing excluded,5,balanced_accuracy,-0.004285714285714226,model minus Model B
+H: Age + savings + employment + housing excluded,6,balanced_accuracy,0.010000000000000009,model minus Model B
+H: Age + savings + employment + housing excluded,7,balanced_accuracy,-0.012142857142857122,model minus Model B
+H: Age + savings + employment + housing excluded,8,balanced_accuracy,-0.00309523809523804,model minus Model B
+H: Age + savings + employment + housing excluded,9,balanced_accuracy,0.0033333333333334103,model minus Model B
+H: Age + savings + employment + housing excluded,10,balanced_accuracy,0.004999999999999893,model minus Model B
+H: Age + savings + employment + housing excluded,1,roc_auc,-0.01028095238095228,model minus Model B
+H: Age + savings + employment + housing excluded,2,roc_auc,-0.00759523809523821,model minus Model B
+H: Age + savings + employment + housing excluded,3,roc_auc,-0.00841904761904766,model minus Model B
+H: Age + savings + employment + housing excluded,4,roc_auc,-0.006528571428571217,model minus Model B
+H: Age + savings + employment + housing excluded,5,roc_auc,-0.005742857142857161,model minus Model B
+H: Age + savings + employment + housing excluded,6,roc_auc,-0.006576190476190402,model minus Model B
+H: Age + savings + employment + housing excluded,7,roc_auc,-0.010128571428571487,model minus Model B
+H: Age + savings + employment + housing excluded,8,roc_auc,-0.009414285714285708,model minus Model B
+H: Age + savings + employment + housing excluded,9,roc_auc,-0.012852380952380948,model minus Model B
+H: Age + savings + employment + housing excluded,10,roc_auc,-0.004519047619047534,model minus Model B
+H: Age + savings + employment + housing excluded,1,error_cost_per_100,4.5,model minus Model B
+H: Age + savings + employment + housing excluded,2,error_cost_per_100,2.5,model minus Model B
+H: Age + savings + employment + housing excluded,3,error_cost_per_100,3.5,model minus Model B
+H: Age + savings + employment + housing excluded,4,error_cost_per_100,1.6000000000000085,model minus Model B
+H: Age + savings + employment + housing excluded,5,error_cost_per_100,3.0,model minus Model B
+H: Age + savings + employment + housing excluded,6,error_cost_per_100,-2.200000000000003,model minus Model B
+H: Age + savings + employment + housing excluded,7,error_cost_per_100,4.099999999999994,model minus Model B
+H: Age + savings + employment + housing excluded,8,error_cost_per_100,1.5,model minus Model B
+H: Age + savings + employment + housing excluded,9,error_cost_per_100,-1.0,model minus Model B
+H: Age + savings + employment + housing excluded,10,error_cost_per_100,-0.7000000000000028,model minus Model B
+H: Age + savings + employment + housing excluded,1,approval_rate_gap_pp,-7.701164835684837,gap difference vs Model B
+H: Age + savings + employment + housing excluded,2,approval_rate_gap_pp,-8.254796962121148,gap difference vs Model B
+H: Age + savings + employment + housing excluded,3,approval_rate_gap_pp,-5.5702332037318785,gap difference vs Model B
+H: Age + savings + employment + housing excluded,4,approval_rate_gap_pp,-4.5804777640202285,gap difference vs Model B
+H: Age + savings + employment + housing excluded,5,approval_rate_gap_pp,-9.00953477551085,gap difference vs Model B
+H: Age + savings + employment + housing excluded,6,approval_rate_gap_pp,-3.473213511147554,gap difference vs Model B
+H: Age + savings + employment + housing excluded,7,approval_rate_gap_pp,-3.9929336982152854,gap difference vs Model B
+H: Age + savings + employment + housing excluded,8,approval_rate_gap_pp,-7.617567961892446,gap difference vs Model B
+H: Age + savings + employment + housing excluded,9,approval_rate_gap_pp,-8.121515153905001,gap difference vs Model B
+H: Age + savings + employment + housing excluded,10,approval_rate_gap_pp,-5.486636329939509,gap difference vs Model B
+H: Age + savings + employment + housing excluded,1,false_approval_rate_gap_pp,-1.0425955140956122,gap difference vs Model B
+H: Age + savings + employment + housing excluded,2,false_approval_rate_gap_pp,0.6653405583373351,gap difference vs Model B
+H: Age + savings + employment + housing excluded,3,false_approval_rate_gap_pp,2.6887989574044924,gap difference vs Model B
+H: Age + savings + employment + housing excluded,4,false_approval_rate_gap_pp,-4.252692228547906,gap difference vs Model B
+H: Age + savings + employment + housing excluded,5,false_approval_rate_gap_pp,3.6285067562932927,gap difference vs Model B
+H: Age + savings + employment + housing excluded,6,false_approval_rate_gap_pp,-2.8602784827491456,gap difference vs Model B
+H: Age + savings + employment + housing excluded,7,false_approval_rate_gap_pp,0.3498182317031473,gap difference vs Model B
+H: Age + savings + employment + housing excluded,8,false_approval_rate_gap_pp,3.909733177858565,gap difference vs Model B
+H: Age + savings + employment + housing excluded,9,false_approval_rate_gap_pp,2.894574387818094,gap difference vs Model B
+H: Age + savings + employment + housing excluded,10,false_approval_rate_gap_pp,-4.115508608272178,gap difference vs Model B
+H: Age + savings + employment + housing excluded,1,false_rejection_rate_gap_pp,-8.28134284016637,gap difference vs Model B
+H: Age + savings + employment + housing excluded,2,false_rejection_rate_gap_pp,-10.06387403446227,gap difference vs Model B
+H: Age + savings + employment + housing excluded,3,false_rejection_rate_gap_pp,-5.6818181818181825,gap difference vs Model B
+H: Age + savings + employment + housing excluded,4,false_rejection_rate_gap_pp,-4.545454545454547,gap difference vs Model B
+H: Age + savings + employment + housing excluded,5,false_rejection_rate_gap_pp,-10.546642899584073,gap difference vs Model B
+H: Age + savings + employment + housing excluded,6,false_rejection_rate_gap_pp,-7.954545454545455,gap difference vs Model B
+H: Age + savings + employment + housing excluded,7,false_rejection_rate_gap_pp,-5.845216874628642,gap difference vs Model B
+H: Age + savings + employment + housing excluded,8,false_rejection_rate_gap_pp,-9.581105169340464,gap difference vs Model B
+H: Age + savings + employment + housing excluded,9,false_rejection_rate_gap_pp,-11.697860962566844,gap difference vs Model B
+H: Age + savings + employment + housing excluded,10,false_rejection_rate_gap_pp,-6.6547831253713605,gap difference vs Model B
+H: Age + savings + employment + housing excluded,1,true_positive_rate_gap_pp,-8.28134284016637,gap difference vs Model B
+H: Age + savings + employment + housing excluded,2,true_positive_rate_gap_pp,-10.06387403446227,gap difference vs Model B
+H: Age + savings + employment + housing excluded,3,true_positive_rate_gap_pp,-5.6818181818181825,gap difference vs Model B
+H: Age + savings + employment + housing excluded,4,true_positive_rate_gap_pp,-4.545454545454547,gap difference vs Model B
+H: Age + savings + employment + housing excluded,5,true_positive_rate_gap_pp,-10.546642899584073,gap difference vs Model B
+H: Age + savings + employment + housing excluded,6,true_positive_rate_gap_pp,-7.954545454545455,gap difference vs Model B
+H: Age + savings + employment + housing excluded,7,true_positive_rate_gap_pp,-5.845216874628642,gap difference vs Model B
+H: Age + savings + employment + housing excluded,8,true_positive_rate_gap_pp,-9.581105169340464,gap difference vs Model B
+H: Age + savings + employment + housing excluded,9,true_positive_rate_gap_pp,-11.697860962566844,gap difference vs Model B
+H: Age + savings + employment + housing excluded,10,true_positive_rate_gap_pp,-6.6547831253713605,gap difference vs Model B

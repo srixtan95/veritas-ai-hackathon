@@ -15,6 +15,7 @@ from src.application import (
     load_research_results,
     model_input_schema,
     validate_applicant_input,
+    validate_research_result_keys,
 )
 from src.affordability import assess_affordability
 
@@ -73,9 +74,23 @@ class ApplicationServiceTests(unittest.TestCase):
 
     def test_research_dashboard_loads_saved_results_without_rerunning(self):
         results = load_research_results()
+        self.assertIs(validate_research_result_keys(results), results)
         self.assertEqual(set(results), set(FAIRNESS_FILES))
         self.assertEqual(set(results["age_fairness"]["model"]), {"Model A (all features)", "Model B (without age)"})
         self.assertEqual(len(results["repeated_fairness"]["model"].unique()), 8)
+        proxy_rates = results["proxy_fairness"]
+        self.assertEqual(len(proxy_rates), 14)
+        self.assertIn("Without Housing (Attribute15)", set(proxy_rates["experiment"]))
+        proxy_gaps = results["proxy_fairness_gaps"]
+        self.assertIn("absolute_gap_percentage_points", proxy_gaps.columns)
+        self.assertIn("Without Checking account status (Attribute1)", set(proxy_gaps["experiment"]))
+        self.assertEqual(len(proxy_gaps), 21)
+
+    def test_incomplete_research_mapping_reports_missing_table_names(self):
+        with self.assertRaisesRegex(ValueError, "proxy_fairness_gaps"):
+            validate_research_result_keys({"proxy_fairness": pd.DataFrame()})
+        with self.assertRaisesRegex(ValueError, "expected a mapping"):
+            validate_research_result_keys(None)
 
     def test_loading_and_assessing_never_calls_pipeline_fit_or_changes_research_artifacts(self):
         before = artifact_hashes()
@@ -87,27 +102,77 @@ class ApplicationServiceTests(unittest.TestCase):
 
 
 class StreamlitIntegrationTests(unittest.TestCase):
-    def test_dashboard_renders_and_accepts_applicant_submission(self):
+    def _complete_applicant_inputs(self, app):
+        for field in model_input_schema(load_credit_model()):
+            key = f"applicant_{field['name']}"
+            if field["kind"] == "categorical":
+                app.selectbox(key=key).set_value(field["choices"][0])
+            else:
+                app.number_input(key=key).set_value(field["default"])
+
+    def test_dashboard_renders_four_sections_and_live_applicant_assessment(self):
         before = artifact_hashes()
         app = AppTest.from_file(str(PROJECT_ROOT / "app.py"), default_timeout=15).run()
         self.assertEqual(len(app.exception), 0, [exception.message for exception in app.exception])
+        self.assertEqual([tab.label for tab in app.tabs], [
+            "Overview", "Applicant Assessment", "Fairness & Research", "Features & Technology",
+        ])
         self.assertGreaterEqual(len(app.selectbox), 13)  # Model B's 13 categorical inputs
         self.assertGreaterEqual(len(app.number_input), 6)  # Model B's 6 numeric inputs
-        app.form_submit_button[0].click().run()
+        self.assertIn("Enter ", " ".join(element.value for element in app.info))
+        self._complete_applicant_inputs(app)
+        app.run()
         self.assertEqual(len(app.exception), 0, [exception.message for exception in app.exception])
-        result = app.session_state["credit_result"]
+        result = app.session_state["live_credit_result"]
         self.assertEqual(len(result["features"]), 19)
         self.assertNotIn("Attribute13", result["features"])
         self.assertEqual(result["predicted_class"], result["explanation"]["predicted_class"])
+        self.assertAlmostEqual(result["probabilities"]["Good risk"], result["explanation"]["probabilities"]["Good risk"])
+        contribution_sum = sum(item["good_log_odds_contribution"] for item in result["explanation"]["contributions"])
+        self.assertAlmostEqual(
+            result["explanation"]["intercept_good_log_odds"] + contribution_sum,
+            result["explanation"]["good_log_odds"],
+        )
         self.assertEqual(before, artifact_hashes())
 
-    def test_dashboard_runs_affordability_form(self):
+    def test_changing_applicant_input_updates_live_explanation(self):
         app = AppTest.from_file(str(PROJECT_ROOT / "app.py"), default_timeout=15).run()
-        app.form_submit_button[1].click().run()
+        self._complete_applicant_inputs(app)
+        app.run()
         self.assertEqual(len(app.exception), 0, [exception.message for exception in app.exception])
-        result = app.session_state["affordability_result"]
-        self.assertEqual(result["affordability_percentage"], 30)
-        self.assertIsNotNone(result["proposed_monthly_emi"])
+        before = app.session_state["live_credit_result"]["probabilities"]["Good risk"]
+        numeric_field = next(field for field in model_input_schema(load_credit_model()) if field["kind"] == "numeric")
+        widget = app.number_input(key=f"applicant_{numeric_field['name']}")
+        widget.set_value(int(numeric_field["default"]) + 1)
+        app.run()
+        self.assertEqual(len(app.exception), 0, [exception.message for exception in app.exception])
+        self.assertIn("live_credit_result", app.session_state)
+        after = app.session_state["live_credit_result"]["probabilities"]["Good risk"]
+        self.assertNotEqual(before, after)
+
+    def test_live_affordability_matches_existing_calculation(self):
+        app = AppTest.from_file(str(PROJECT_ROOT / "app.py"), default_timeout=15).run()
+        app.number_input(key="finance_income").set_value(50000)
+        app.number_input(key="finance_repayments").set_value(6000)
+        app.number_input(key="finance_other").set_value(9000)
+        app.number_input(key="finance_rate").set_value(10)
+        app.number_input(key="finance_tenure").set_value(36)
+        app.number_input(key="finance_amount").set_value(250000)
+        app.run()
+        self.assertEqual(len(app.exception), 0, [exception.message for exception in app.exception])
+        result = app.session_state["live_affordability_result"]
+        expected = assess_affordability(50000, 6000, 9000, 10, 36, 250000, 30)
+        self.assertEqual(result, expected)
+        app.slider(key="finance_percentage").set_value(25)
+        app.run()
+        self.assertEqual(app.session_state["live_affordability_result"]["affordability_percentage"], 25)
+
+    def test_research_and_global_explainability_render_from_saved_files(self):
+        app = AppTest.from_file(str(PROJECT_ROOT / "app.py"), default_timeout=15).run()
+        self.assertEqual(len(app.exception), 0, [exception.message for exception in app.exception])
+        self.assertTrue(any("Top Model B global feature influence" in str(element.value) for element in app.markdown))
+        self.assertTrue(any("Baseline comparison" in str(element.value) for element in app.markdown))
+        self.assertTrue(any("Repeated validation across eight configurations" in str(element.value) for element in app.markdown))
 
 
 if __name__ == "__main__":
