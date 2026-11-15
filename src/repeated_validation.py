@@ -12,6 +12,7 @@ from sklearn.pipeline import Pipeline
 from .data_analysis import find_age_column
 from .fairness import age_groups, group_metrics, rate_gaps
 from .model import evaluate_predictions, make_preprocessor
+from .reporting import markdown_table
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -356,13 +357,7 @@ def _markdown_table(table):
     table = table.copy()
     for column in table.select_dtypes(include="number"):
         table[column] = table[column].map(lambda value: "N/A" if pd.isna(value) else f"{value:.3f}")
-    lines = [
-        "| " + " | ".join(str(column) for column in table.columns) + " |",
-        "|" + "|".join(["---"] * len(table.columns)) + "|",
-    ]
-    for _, row in table.iterrows():
-        lines.append("| " + " | ".join(str(value) for value in row) + " |")
-    return "\n".join(lines)
+    return markdown_table(table)
 
 
 def _save_results(dataset, fold_plan, outputs, output_dir, n_splits, n_repeats, random_state):

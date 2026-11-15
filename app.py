@@ -1,7 +1,6 @@
 """Immortals AI research prototype dashboard. Launch with ``streamlit run app.py``."""
 
 import html
-import math
 
 import numpy as np
 import pandas as pd
