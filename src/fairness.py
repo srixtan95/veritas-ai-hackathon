@@ -4,10 +4,14 @@ import pandas as pd
 
 
 def age_groups(ages):
-    """Split ages at 25 into the two groups used in this project."""
+    """Split known ages at 25, leaving missing ages without a group."""
+    age_values = pd.Series(ages)
     return pd.Series(
-        ["Under 25" if age < 25 else "25 or older" for age in ages],
-        index=ages.index,
+        [
+            pd.NA if pd.isna(age) else "Under 25" if age < 25 else "25 or older"
+            for age in age_values
+        ],
+        index=age_values.index,
         name="age_group",
     )
 

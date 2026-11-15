@@ -11,6 +11,21 @@ class DataAuditTests(unittest.TestCase):
         actual = age_groups(pd.Series([18, 24, 25, 40]))
         self.assertEqual(actual.tolist(), ["Under 25", "Under 25", "25 or older", "25 or older"])
 
+    def test_missing_age_is_not_assigned_to_a_demographic_group(self):
+        groups = age_groups(pd.Series([24, None, 25]))
+        self.assertEqual(groups.iloc[0], "Under 25")
+        self.assertTrue(pd.isna(groups.iloc[1]))
+        self.assertEqual(groups.iloc[2], "25 or older")
+
+        metrics = group_metrics(
+            actual=pd.Series([1, 2, 2]),
+            predicted=pd.Series([1, 1, 1]),
+            groups=groups,
+        ).set_index("group")
+        self.assertEqual(metrics["group_size"].sum(), 2)
+        self.assertEqual(metrics.loc["Under 25", "group_size"], 1)
+        self.assertEqual(metrics.loc["25 or older", "group_size"], 1)
+
     def test_wilson_interval_contains_observed_rate(self):
         low, high = wilson_interval(7, 10)
         self.assertLessEqual(low, 0.7)
