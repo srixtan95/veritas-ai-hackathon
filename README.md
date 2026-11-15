@@ -3,6 +3,7 @@
 **Fairness-Aware Credit Intelligence**  
 *Intelligence. Transparency. Fairness.*  
 Team: **The Immortals**
+
 Link: https://immortals-ai.streamlit.app/
 
 Immortals AI uses the Statlog German Credit dataset (UCI ID 144) to study loan-risk
