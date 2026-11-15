@@ -12,6 +12,7 @@ from sklearn.pipeline import Pipeline
 from .data_analysis import find_age_column
 from .fairness import age_groups, format_fairness_table, group_metrics, rate_gaps
 from .model import evaluate_predictions, make_preprocessor
+from .reporting import markdown_table as _markdown_table
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -169,17 +170,6 @@ def _safe_records(frame):
                 clean[key] = value
         records.append(clean)
     return records
-
-
-def _markdown_table(table):
-    """Format a results table as Markdown without another dependency."""
-    lines = [
-        "| " + " | ".join(str(column) for column in table.columns) + " |",
-        "|" + "|".join(["---"] * len(table.columns)) + "|",
-    ]
-    for _, row in table.iterrows():
-        lines.append("| " + " | ".join(str(value) for value in row) + " |")
-    return "\n".join(lines)
 
 
 def _write_outputs(dataset, split, variants, results, output_dir):

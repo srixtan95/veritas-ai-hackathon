@@ -12,6 +12,7 @@ from sklearn.pipeline import Pipeline
 from .data_analysis import find_age_column
 from .fairness import age_groups, format_fairness_table, group_metrics, rate_gaps
 from .model import MODEL_DIR, evaluate_predictions, make_preprocessor
+from .reporting import markdown_table as _markdown_table
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -93,17 +94,6 @@ def _baseline_matches(saved_scores, recalculated_scores):
         "false_rejections", "error_cost", "confusion_matrix",
     ]
     return all(saved_scores[name] == recalculated_scores[name] for name in metric_names)
-
-
-def _markdown_table(table):
-    """Turn a small DataFrame into a Markdown table without extra packages."""
-    lines = [
-        "| " + " | ".join(str(column) for column in table.columns) + " |",
-        "|" + "|".join(["---"] * len(table.columns)) + "|",
-    ]
-    for _, row in table.iterrows():
-        lines.append("| " + " | ".join(str(value) for value in row) + " |")
-    return "\n".join(lines)
 
 
 def run_age_ablation(dataset, output_dir=OUTPUT_DIR):
